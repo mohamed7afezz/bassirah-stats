@@ -9,6 +9,7 @@ import { ProjectsComponent } from "./projects/projects.component";
 import { NftComponent } from "./nft/nft.component";
 import { JobComponent } from './job/job.component';
 import { DashboardBlogComponent } from './dashboard-blog/dashboard-blog.component';
+import { OsamaComponent } from './osama/osama.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,10 @@ const routes: Routes = [
   {
     path: "dashboard-blog",
     component: DashboardBlogComponent
+  },
+  {
+    path: "osama",
+    component: OsamaComponent
   }
 ];
 

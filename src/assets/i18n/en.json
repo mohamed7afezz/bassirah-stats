@@ -5,6 +5,9 @@
     }
   },
   "MENUITEMS": {
+    "OSAMA":{
+      "TEXT": "OSAMA"
+    },
     "MENU": {
       "TEXT": "MENU"
     },
