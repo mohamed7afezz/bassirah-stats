@@ -34,7 +34,6 @@ import { CryptoComponent } from './crypto/crypto.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NftComponent } from './nft/nft.component';
 import { JobComponent } from './job/job.component';
-import { OsamaComponent } from './osama/osama.component';
 
 @NgModule({
   declarations: [
@@ -43,8 +42,7 @@ import { OsamaComponent } from './osama/osama.component';
     CryptoComponent,
     ProjectsComponent,
     NftComponent,
-    JobComponent,
-    OsamaComponent
+    JobComponent
   ],
   imports: [
     CommonModule,

@@ -30,6 +30,17 @@ import { ToastsContainer } from './dashboards/dashboard/toasts-container.compone
 import { DashboardsModule } from "./dashboards/dashboards.module";
 import { AppsModule } from "./apps/apps.module";
 import { EcommerceModule } from "./ecommerce/ecommerce.module";
+import { Indicator360Component } from "./indicator360/indicator360.component";
+import { ProcessManagementComponent } from './process-management/process-management.component'; 
+import { CollaborationComponent } from './collaboration/collaboration.component';
+import { DataAnalyticsComponent } from './data-analytics/data-analytics.component';
+import { StatisticalDataMartComponent } from './statistical-data-mart/statistical-data-mart.component';
+import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
+import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
+import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
+
+
+
 
 
 @NgModule({
@@ -55,7 +66,15 @@ import { EcommerceModule } from "./ecommerce/ecommerce.module";
     LightboxModule,
     DashboardsModule,
     AppsModule,
-    EcommerceModule
+    EcommerceModule,
+    Indicator360Component,
+    ProcessManagementComponent,
+    CollaborationComponent,
+    DataAnalyticsComponent,
+    StatisticalDataMartComponent,
+    DataVisualizationComponent,
+    WorkflowModuleComponent,
+    DataWranglingComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

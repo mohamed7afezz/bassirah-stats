@@ -8,6 +8,30 @@
     "MENU": {
       "TEXT": "قائمة"
     },
+    "INDICATOR360":{
+      "TEXT": "المؤشر 360 (I-Track)"
+    },
+    "PROCESS_MANAGEMENT":{
+      "TEXT": "إدارة العمليات (I-Organize)"
+    },
+    "DATA_VISUALIZATION":{
+      "TEXT": "تصور البيانات (I-Present)"
+    },
+    "STATISTICAL_DATA_MART":{
+      "TEXT": "مركز البيانات الإحصائية (I-Browse)"
+    },
+    "DATA_WRANGLING":{
+      "TEXT": "معالجة البيانات (I-Transform)"
+    },
+    "DATA_ANALYTICS":{
+      "TEXT": "تحليلات البيانات (I-Analyze)"
+    },
+    "WORKFLOW":{
+      "TEXT": "سير العمل (I-Plan)"
+    },
+    "COLLABORATION":{
+      "TEXT": "التعاون (I-Communicate)"
+    },
     "DASHBOARD": {
       "TEXT": "لوحات القيادة",
       "BADGE": "جديد",

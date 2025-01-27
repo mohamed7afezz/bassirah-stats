@@ -5,8 +5,29 @@
     }
   },
   "MENUITEMS": {
-    "OSAMA":{
-      "TEXT": "OSAMA"
+    "INDICATOR360":{
+      "TEXT": "Indicator 360 (I-Track)"
+    },
+    "PROCESS_MANAGEMENT":{
+      "TEXT": "Process Management (I-Organize)"
+    },
+    "DATA_VISUALIZATION":{
+      "TEXT": "Data Visualization (I-Present)"
+    },
+    "STATISTICAL_DATA_MART":{
+      "TEXT": "Statistical Data Mart (I-Browse)"
+    },
+    "DATA_WRANGLING":{
+      "TEXT": "Data Wrangling (I-Transform)"
+    },
+    "DATA_ANALYTICS":{
+      "TEXT": "Data Analytics (I-Analyze)"
+    },
+    "WORKFLOW":{
+      "TEXT": "Workflow (I-Plan)"
+    },
+    "COLLABORATION":{
+      "TEXT": "Collaboration (I-Communicate)"
     },
     "MENU": {
       "TEXT": "MENU"

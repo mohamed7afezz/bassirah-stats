@@ -1,10 +1,43 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { Indicator360Component } from "./indicator360/indicator360.component"; // Import the component
+import { ProcessManagementComponent } from './process-management/process-management.component'; 
+import { CollaborationComponent } from './collaboration/collaboration.component';
+import { DataAnalyticsComponent } from './data-analytics/data-analytics.component';
+import { StatisticalDataMartComponent } from './statistical-data-mart/statistical-data-mart.component';
+import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
+import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
+import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
+
 
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 
 const routes: Routes = [
+    {
+      path: 'indicator360', component: Indicator360Component // Add the new route
+    },
+    {
+      path: 'process_management', component: ProcessManagementComponent // Add the new route
+    },
+    {
+      path: 'collaboration', component: CollaborationComponent // Add the new route
+    },
+    {
+      path: 'data_analytics', component: DataAnalyticsComponent // Add the new route
+    },
+    {
+      path: 'statistical_data_mart', component: StatisticalDataMartComponent // Add the new route
+    },
+    {
+      path: 'data_visualization', component: DataVisualizationComponent // Add the new route
+    },
+    {
+      path: 'workflow', component: WorkflowModuleComponent // Add the new route
+    },
+    {
+      path: 'data_wrangling', component: DataWranglingComponent // Add the new route
+    },
     {
         path: "",
         component: DashboardComponent

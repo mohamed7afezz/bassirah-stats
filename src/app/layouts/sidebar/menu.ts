@@ -2,58 +2,116 @@ import { MenuItem } from './menu.model';
 
 export const MENU: MenuItem[] = [
   {
-    id: 1,
-    label: 'MENUITEMS.OSAMA.TEXT',
-    icon: 'ri-store-2-line',
+    id: 200,
+    label: 'MENUITEMS.INDICATOR360.TEXT',
+    icon: 'ri-search-eye-line',
+    link: '/indicator360'
+  },
+  {
+    id: 201,
+    label: 'MENUITEMS.PROCESS_MANAGEMENT.TEXT',
+    icon: 'ri-booklet-line',
+    link: '/process_management'
+  },
+  {
+    id: 202,
+    label: 'MENUITEMS.DATA_VISUALIZATION.TEXT',
+    icon: 'ri-table-fill',//ri-line-chart-fill',
+    link: '/data_visualization'
+  },
+  {
+    id: 203,
+    label: 'MENUITEMS.STATISTICAL_DATA_MART.TEXT',
+    icon: 'ri-shopping-cart-line',
+    link: '/statistical_data_mart'
+  },
+  {
+    id: 204,
+    label: 'MENUITEMS.DATA_WRANGLING.TEXT',
+    icon: 'ri-tools-fill',
+    link: '/data_wrangling'
+  },
+  {
+    id: 205,
+    label: 'MENUITEMS.DATA_ANALYTICS.TEXT',
+    icon: 'ri-speak-fill',
+    link: '/data_analytics'
+  },
+  {
+    id: 206,
+    label: 'MENUITEMS.WORKFLOW.TEXT',
+    icon: 'ri-flow-chart',
+    link: '/workflow'
+  },
+  {
+    id: 207,
+    label: 'MENUITEMS.COLLABORATION.TEXT',
+    icon: 'ri-message-2-fill',
+    link: '/collaboration',
     isCollapsed: true,
     subItems: [
       {
-        id: 3,
-        label: 'MENUITEMS.OSAMA.TEXT',
-        link: '/osama',
-        parentId: 2
-      },
-      {
-        id: 4,
-        label: 'MENUITEMS.DASHBOARD.LIST.CRM',
-        link: '/crm',
-        parentId: 2
-      },
-      {
-        id: 5,
-        label: 'MENUITEMS.DASHBOARD.LIST.ECOMMERCE',
-        link: '/',
-        parentId: 2
-      },
-      {
-        id: 6,
-        label: 'MENUITEMS.DASHBOARD.LIST.CRYPTO',
-        link: '/crypto',
-        parentId: 2
-      },
-      {
-        id: 7,
-        label: 'MENUITEMS.DASHBOARD.LIST.PROJECTS',
-        link: '/projects',
-        parentId: 2
-      },
-      {
-        id: 7,
-        label: 'MENUITEMS.DASHBOARD.LIST.NFT',
-        link: '/nft',
-        parentId: 2,
-      },
-      {
-        id: 8,
-        label: 'MENUITEMS.DASHBOARD.LIST.JOB',
-        link: '/job',
-        parentId: 2,
+        id: 208,
+        label: 'MENUITEMS.COLLABORATION.TEXT',
+        link: '/collaboration',
+        parentId: 8
       },
       {
         id: 9,
-        label: 'MENUITEMS.PAGES.LIST.BLOG',
-        link: '/dashboard-blog',
-        parentId: 2,
+        label: 'MENUITEMS.APPS.LIST.CALENDAR',
+        isCollapsed: true,
+        parentId: 8,
+        subItems: [
+          {
+            id: 9,
+            label: 'MENUITEMS.APPS.LIST.MAINCALENDAR',
+            link: '/calendar',
+          },
+          {
+            id: 9,
+            label: 'MENUITEMS.APPS.LIST.MONTHGRID',
+            link: '/month-grid',
+          }
+        ]
+      },
+
+      {
+        id: 10,
+        label: 'MENUITEMS.APPS.LIST.CHAT',
+        link: '/chat',
+        parentId: 8
+      },
+      {
+        id: 11,
+        label: 'MENUITEMS.APPS.LIST.EMAIL',
+        parentId: 8,
+        subItems: [
+          {
+            id: 13,
+            label: 'MENUITEMS.APPS.LIST.MAILBOX',
+            link: '/mailbox',
+            parentId: 11
+          },
+          {
+            id: 14,
+            label: 'MENUITEMS.APPS.LIST.MAILTEMPLATES',
+            parentId: 11,
+            subItems: [
+              {
+                id: 13,
+                label: 'MENUITEMS.APPS.LIST.BASICACTION',
+                link: '/email-basic',
+                parentId: 14
+              },
+              {
+                id: 13,
+                label: 'MENUITEMS.APPS.LIST.ECOMMERCEACTION',
+                link: '/email-ecommerce',
+                parentId: 14
+              },
+            ]
+          }
+        ]
       }
     ]
   },

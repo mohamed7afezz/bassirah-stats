@@ -6,8 +6,8 @@
         //Typography
 
         // Font Family
-        --#{$prefix}font-family-primary:                                     'hkgrotesk', sans-serif;
-        --#{$prefix}font-family-secondary:                                   'Poppins', sans-serif;
+        --#{$prefix}font-family-primary:                                     "IBM Plex Sans Arabic", serif;
+        --#{$prefix}font-family-secondary:                                   "IBM Plex Sans Arabic", serif;
         
         $font-sizes: (
             "10":          0.625rem,

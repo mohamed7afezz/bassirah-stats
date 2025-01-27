@@ -2,7 +2,8 @@
 
     // Google Font
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+    
     [data-theme="minimal"] { 
 
         $primary:                   #25a0e2;
@@ -45,8 +46,8 @@
         );
 
         // Font Family
-        --#{$prefix}font-family-primary:                                     'Open Sans', sans-serif;
-        --#{$prefix}font-family-secondary:                                   'Open Sans', sans-serif;
+        --#{$prefix}font-family-primary:                                     "IBM Plex Sans Arabic", serif;
+        --#{$prefix}font-family-secondary:                                   "IBM Plex Sans Arabic", serif;
         
         --#{$prefix}grid-gutter-width:                              1.5rem;
 
