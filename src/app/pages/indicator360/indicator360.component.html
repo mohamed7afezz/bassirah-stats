@@ -1,14 +1,40 @@
 
 <div class="row">
   <div class="col-xxl-12">
-      <div class="row big-cards">
+      <div class="row big-cards justify-content-center">
           @for ( stat of statData; track $index) {
           <div class="col-md-4">
-             <a href="{{stat.link}}">
-                <app-analatics-stat  [title]="stat.title" [value]="stat.value" [icon]="stat.icon" [persantage]="stat.persantage" [profit]="stat.profit"></app-analatics-stat>
+             <a routerLink="{{ stat.link_url }}" class="{{ stat.link_url }}" >
+                <div class="card card-animate">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="fw-medium text-muted mb-0">{{stat.title}}</p>
+                                <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                                    <span [countUp]="stat.value" class="counter-value" ></span>
+                                    @if (stat.title == "Electricity In Household") {
+                                        <span>%</span>
+                                    }
+                                </h2>
+                                <p class="mb-0 text-muted text-truncate"><span class="badge bg-light text-success mb-0" [ngClass]=" { 'text-danger': stat.profit === 'down'}">
+                                        <i class="align-middle" [ngClass]=" { 'ri-arrow-up-line': stat.profit === 'up','ri-arrow-down-line': stat.profit === 'down'}"></i>
+                                        {{ stat.persantage }} %
+                                    </span> vs. Previous Quarter</p>
+                            </div>
+                            <div>
+                                <div class="avatar-sm flex-shrink-0">
+                                    <span class="fs-2 avatar-title bg-success-subtle rounded-circle fs-3">
+                                        <i class="las " [ngClass]="stat.icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end card body -->
+                </div> <!-- end card-->
               </a>
           </div>
           }
+          <router-outlet></router-outlet>
       </div>
   </div> <!-- end col-->
 

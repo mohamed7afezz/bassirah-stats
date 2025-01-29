@@ -464,8 +464,8 @@ const widgetsActivities = [
         time: "02:00pm - 03:45pm",
         caption: "Adding a new event with attachments",
         subItem: [
-            { id: 1, img: 'assets/images/users/avatar-4.jpg', name: 'Frida Bang' },
-            { id: 2, img: 'assets/images/users/avatar-5.jpg', name: 'Frida Bang' },
+            { id: 1, img: 'assets/images/users/avatar-4.jpg', name: 'Dr. Hamad bin Mohammed' },
+            { id: 2, img: 'assets/images/users/avatar-5.jpg', name: 'Dr. Hamad bin Mohammed' },
             { id: 3, img: 'assets/images/users/avatar-6.jpg', name: 'Simon Schmidt' },
             { id: 4, img: 'assets/images/users/avatar-7.jpg', name: 'Tosh Jessen' },
             { id: 5, imgNumber: "3", bgcolor: "bg-success" },

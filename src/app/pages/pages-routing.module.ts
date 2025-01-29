@@ -8,35 +8,39 @@ import { StatisticalDataMartComponent } from './statistical-data-mart/statistica
 import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
 import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
 import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
-
+// Indecators
+import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-domestic-product/gross-domestic-product.component';
 
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 
 const routes: Routes = [
     {
-      path: 'indicator360', component: Indicator360Component // Add the new route
+      path: 'indicator360', component: Indicator360Component 
     },
     {
-      path: 'process_management', component: ProcessManagementComponent // Add the new route
+      path: 'process_management', component: ProcessManagementComponent 
     },
     {
-      path: 'collaboration', component: CollaborationComponent // Add the new route
+      path: 'collaboration', component: CollaborationComponent 
     },
     {
-      path: 'data_analytics', component: DataAnalyticsComponent // Add the new route
+      path: 'data_analytics', component: DataAnalyticsComponent 
     },
     {
-      path: 'statistical_data_mart', component: StatisticalDataMartComponent // Add the new route
+      path: 'statistical_data_mart', component: StatisticalDataMartComponent 
     },
     {
-      path: 'data_visualization', component: DataVisualizationComponent // Add the new route
+      path: 'data_visualization', component: DataVisualizationComponent 
     },
     {
-      path: 'workflow', component: WorkflowModuleComponent // Add the new route
+      path: 'workflow', component: WorkflowModuleComponent 
     },
     {
-      path: 'data_wrangling', component: DataWranglingComponent // Add the new route
+      path: 'data_wrangling', component: DataWranglingComponent 
+    },
+    {
+      path: 'indicator360/gross-domestic-product', component: GrossDomesticProductComponent
     },
     {
         path: "",

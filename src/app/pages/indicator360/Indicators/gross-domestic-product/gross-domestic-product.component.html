@@ -1,0 +1,150 @@
+
+
+<div class="row">
+  <div class="col-xxl-12">
+      <div class="row">
+          <div class="col-12 m-auto">
+              <div class="card">
+                  <div class="card-body p-0">
+                      <div class="row align-items-end">
+                            <div  class="d-flex justify-content-between align-items-center">
+                                <h1  class="main-head text-center p-5 m-0"><i  class="las la-hand-holding-usd"></i> Gross Domestic Product (GDP)</h1>
+                                <div class="d-flex flex-column p-5"><span data-target="1700000" class="counter-value">1700000</span><span  class="badge bg-light text-success mb-0" ><i  class="align-middle ri-arrow-up-line" ></i> 6.25 % </span></div>
+                            </div>
+                      </div>
+                  </div> <!-- end card-body-->
+              </div>
+          </div> <!-- end col-->
+      </div> <!-- end row-->
+
+      <div class="row">
+          <div class="col-xl-6">
+              <div class="card card-animate">
+                    <div class="card-header text-center p-4">
+                      <h4 class="card-title mb-0">Upcoming Indicator Publications</h4>
+                    </div><!-- end card header -->
+                    <div class="card-body">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <div class="alert-count m-0 text-center alert border-0 alert-danger material-shadow d-inline-block p-3 rounded-circle" role="alert">
+                                <strong>3</strong>
+                            </div>
+                        </div>
+                    </div><!-- end card body -->
+                </div> <!-- end card-->
+
+              <div class="card card-animate">
+                  <div class="card-header text-center p-4">
+                      <h4 class="card-title mb-0">Indicator’s Top Historical Publications</h4>
+                  </div><!-- end card header -->
+
+                  <div class="card-body p-0">
+                      <table class="table table-borderless table-hover table-nowrap align-middle bg-white mb-1">
+                        <thead class="text-muted table-light">
+                            <tr>
+                                <th scope="col" style="padding:  16px 24px 16px; ">Publication Name</th>
+                                <th scope="col"  style="padding: 16px 24px 16px;">Year</th>
+                                <th scope="col"  style="padding: 16px 24px 16px;">Quarter</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @for ( data of TopHistoricalPublication; track $index) {
+                            <tr>
+                                <td style="padding-left: 24px;">
+                                    <a target="_blank" href="{{data.PDFURL}}">{{data.PDFName}}</a>
+                                </td>
+                                <td style="padding-left: 24px;">{{data.year}}</td>
+                                <td style="padding-left: 24px;">{{data.quarter}}</td>
+                            </tr><!-- end -->
+                            }
+                        </tbody><!-- end tbody -->
+                    </table><!-- end table -->
+                  </div><!-- end card-body -->
+              </div><!-- end card -->
+
+
+          </div>
+          <!-- end col -->
+          <div class="col-xl-6">
+               <div class="card card-animate">
+                  <div class="card-header text-center p-4">
+                      <h4 class="card-title mb-0">Indicator’s Main Authors</h4>
+                  </div><!-- end card header -->
+
+                  <div class="card-body p-0">
+                    <table class="table table-borderless table-hover table-nowrap align-middle bg-white mb-5">
+                        <thead class="table-light">
+                            <tr class="text-muted">
+                              <th scope="col" style="padding:  16px 24px 16px; ">Name</th>
+                              <th scope="col" style="padding:  16px 24px 16px; ">Last Publications Date</th>
+                              <th scope="col" style="padding:  16px 24px 16px; " >Publications</th>
+                              <th scope="col" style="padding:  16px 24px 16px; ">Published Percentage</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @for ( data of MainAuthors; track $index) {
+                            <tr>
+                                <td style="padding: 21px 24px; "><img src="{{data.profile}}" alt="" class="avatar-xs rounded-circle me-2 material-shadow">
+                                  <a href="javascript:void(0);" class="text-body fw-medium">{{data.name}}</a>
+                                </td>
+                                <td style="padding:  21px 24px; ">{{data.date}}</td>
+                                <td style="padding:  21px 24px; ">{{data.publications}}</td>
+                                <td style="padding:  21px 24px; ">
+                                    <div class="text-nowrap">{{data.percentage}}</div>
+                                </td>
+                            </tr>
+                            }
+                        </tbody><!-- end tbody -->
+                    </table><!-- end table -->
+                  </div>
+               </div>
+            </div>
+            <!-- end col -->
+
+      </div>
+       <!-- end row -->
+
+      <div class="row">
+          <div class="col-xl-6">
+              <div class="card card-animate">
+                  <div class="card-header text-center">
+                      <h4 class="card-title mb-0">Gross Domestic Product By Main Economic  Activities at Current Prices</h4>
+                      <span class="">(Million of Saudi Riyals)</span>
+                  </div><!-- end card header -->
+
+                  <div class="card-body">
+                      <apx-chart [series]="zoomableTimeseriesChart.series" [chart]="zoomableTimeseriesChart.chart"
+                          [markers]="zoomableTimeseriesChart.markers" [dataLabels]="zoomableTimeseriesChart.dataLabels"
+                          [stroke]="zoomableTimeseriesChart.stroke" [colors]="zoomableTimeseriesChart.colors"
+                          [title]="zoomableTimeseriesChart.title" [xaxis]="zoomableTimeseriesChart.xaxis"
+                          [colors]="zoomableTimeseriesChart.colors" dir="ltr"></apx-chart>
+                  </div><!-- end card-body -->
+              </div><!-- end card -->
+          </div>
+            <!-- end col -->
+           <div class="col-xl-6">
+               <div class="card card-animate">
+                  <div class="card-header text-center p-4">
+                      <h4 class="card-title mb-0">Indicator’s Main Authors</h4>
+                  </div><!-- end card header -->
+
+                  <div class="card-body p-0">
+                    <apx-chart [series]="stackedAreaChart.series" [chart]="stackedAreaChart.chart"
+                    [xaxis]="stackedAreaChart.xaxis" [dataLabels]="stackedAreaChart.dataLabels"
+                    [yaxis]="stackedAreaChart.yaxis" [colors]="stackedAreaChart.colors"
+                    [legend]="stackedAreaChart.legend" [fill]="stackedAreaChart.fill" dir="ltr"></apx-chart>
+                  </div>
+               </div>
+            </div>
+      </div>
+      <!-- end row -->
+
+
+
+
+
+
+  </div> <!-- end col-->
+
+</div> <!-- end row-->
+

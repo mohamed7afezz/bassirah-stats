@@ -38,9 +38,7 @@ import { StatisticalDataMartComponent } from './statistical-data-mart/statistica
 import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
 import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
 import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
-
-
-
+import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-domestic-product/gross-domestic-product.component';
 
 
 @NgModule({
@@ -74,7 +72,8 @@ import { DataWranglingComponent } from './data-wrangling/data-wrangling.componen
     StatisticalDataMartComponent,
     DataVisualizationComponent,
     WorkflowModuleComponent,
-    DataWranglingComponent
+    DataWranglingComponent,
+    GrossDomesticProductComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

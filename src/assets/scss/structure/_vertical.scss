@@ -27,7 +27,7 @@
 .navbar-menu {
     width: var(--#{$prefix}vertical-menu-width);
     z-index: $vertical-menu-z-index;
-    background: var(--#{$prefix}vertical-menu-bg);
+    background: rgb(27, 131, 84);
     border-right: 1px solid var(--#{$prefix}vertical-menu-border);
     bottom: 0;
     margin-top: 0;
@@ -42,12 +42,12 @@
             display: flex;
             align-items: center;
             padding: $vertical-menu-item-padding-y $vertical-menu-item-padding-x;
-            color: var(--#{$prefix}vertical-menu-item-color);
+            color: var(--#{$prefix}vertical-menu-item-active-color);
             font-size: var(--#{$prefix}vertical-menu-item-font-size);
             font-family: var(--#{$prefix}vertical-menu-item-font-family);
 
             &.active {
-                color: var(--#{$prefix}vertical-menu-item-active-color);
+                color: var(--#{$prefix}vertical-menu-item-color);
             }
 
             &:hover {
@@ -129,7 +129,7 @@
 
             .nav-link {
                 padding: $vertical-menu-sub-item-padding-y $vertical-menu-sub-item-padding-x !important;
-                color: var(--#{$prefix}vertical-menu-sub-item-color);
+                color: var(--#{$prefix}vertical-menu-sub-item-hover-color);
                 white-space: none;
                 position: relative;
                 font-size: var(--#{$prefix}vertical-menu-sub-item-font-size);
@@ -139,7 +139,7 @@
                     content: '';
                     width: 6px;
                     height: 1.5px;
-                    background-color: var(--#{$prefix}vertical-menu-sub-item-color);
+                    background-color: var(--#{$prefix}vertical-menu-sub-item-hover-color);
                     position: absolute;
                     left: 2px;
                     top: 16.5px;
@@ -148,10 +148,10 @@
                 }
 
                 &:hover {
-                    color: var(--#{$prefix}vertical-menu-sub-item-hover-color);
+                    color: var(--#{$prefix}vertical-menu-sub-item-color);
 
                     &:before {
-                        background-color: var(--#{$prefix}vertical-menu-sub-item-hover-color) !important;
+                        background-color: var(--#{$prefix}vertical-menu-sub-item-color) !important;
                         opacity: 1;
                     }
                 }

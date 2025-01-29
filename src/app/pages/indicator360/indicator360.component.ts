@@ -1,11 +1,15 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { WidgetModule } from '../../shared/widget/widget.module';
+import {FeatherModule} from "angular-feather";
+import {NgClass} from "@angular/common";
+import {CountUpModule} from "ngx-countup";
+import {RouterLink, RouterOutlet} from "@angular/router";
 
 
 @Component({
   selector: 'app-indicator360',
   standalone: true,
-  imports: [WidgetModule],
+  imports: [WidgetModule, FeatherModule, NgClass, CountUpModule, RouterLink, RouterOutlet],
   templateUrl: './indicator360.component.html',
   styleUrl: './indicator360.component.scss',
   encapsulation: ViewEncapsulation.None // Disable view encapsulation
@@ -21,61 +25,54 @@ export class Indicator360Component {
   private fetchData() {
     this.statData = [
       {
-        title: 'Upcoming Indicator Publications',
-        link_url: '/upcoming-indicator-publications',
-        value: 28.05,
-        icon: 'users',
-        persantage: '16.24',
+        title: 'Gross Domestic Product (GDP)',
+        link_url: 'gross-domestic-product',
+        value: 1700000,
+        icon: 'la-hand-holding-usd',
+        persantage: '6.25',
         profit: 'up'
       }, {
-        title: 'Indicator Trend Analysis',
-        link_url: '/indicator-trend-analysis',
-        value: 97.66,
-        icon: 'activity',
-        persantage: '3.96',
-        profit: 'down'
+        title: 'ICT Employment Rate',
+        link_url: 'indicator360/trend-analysis',
+        value: 12,
+        icon: 'la-chalkboard-teacher',
+        persantage: '4.35',
+        profit: 'up'
       }, {
-        title: 'Indicator’s Top Historical Publications',
-        link_url: '/indicator-s-top-historical-publications',
-        value: 3.40,
-        icon: 'clock',
-        persantage: '0.24',
-        profit: 'down'
+        title: 'Total Exports',
+        link_url: 'indicator360/top-historical-publications',
+        value: 1200000,
+        icon: 'la-ship',
+        persantage: '4.35',
+        profit: 'up'
       }, {
-        title: 'Indicator’s Main Authors',
-        link_url: '/indicator-s-main-authors',
-        value: 3.40,
-        icon: 'external-link',
-        persantage: '7.05',
+        title: 'Total Imports',
+        link_url: 'indicator360/main-authors',
+        value: 2300000,
+        icon: 'la-boxes',
+        persantage: '2.22',
         profit: 'up'
       },
       {
-        title: 'Indicator relations to Micro-data predictors',
-        link_url: '/indicator-relations-to-micro-data-predictors',
-        value: 28.05,
-        icon: 'users',
-        persantage: '16.24',
+        title: 'Consumer Price Index',
+        link_url: 'indicator360/relation-to-indicators-and-predictors',
+        value: 112.28,
+        icon: 'la-cart-arrow-down',
+        persantage: '2.07',
         profit: 'up'
       }, {
-        title: 'Indicator relations to other indicators',
-        link_url: '/indicator-relations-to-other-indicators',
-        value: 97.66,
-        icon: 'activity',
-        persantage: '3.96',
-        profit: 'down'
+        title: 'Life Expectancy at Birth',
+        link_url: 'indicator360/relation-to-indicators-and-predictors',
+        value: 78.5,
+        icon: 'la-baby-carriage',
+        persantage: '0.38',
+        profit: 'up'
       }, {
-        title: 'Indicator’s data request over time',
-        link_url: '/indicator-s-data-request-over-time',
-        value: 3.40,
-        icon: 'clock',
-        persantage: '0.24',
-        profit: 'down'
-      }, {
-        title: 'Indicator web interactions over time',
-        link_url: '/indicator-web-interactions-over-time',
-        value: 33.48,
-        icon: 'external-link',
-        persantage: '7.05',
+        title: 'Electricity In Household',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+        icon: 'la-plug',
+        persantage: '11.33',
         profit: 'up'
       }
     ];

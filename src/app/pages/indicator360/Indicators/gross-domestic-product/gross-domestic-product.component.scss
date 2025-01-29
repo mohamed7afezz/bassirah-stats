@@ -1,0 +1,25 @@
+.main-head{
+  color: rgb(27, 131, 84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  i{
+    font-size: 50px;
+    padding: 10px;
+    color: #FFF;
+    background-color: rgb(27, 131, 84);
+    border-radius: 50%;
+  }
+}
+.counter-value{
+  font-size: 30px;
+  font-weight: 600;
+}
+.alert-count {
+	width: 77px;
+	height: 77px;
+    strong{
+      font-size: 30px;
+    }
+}

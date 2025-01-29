@@ -53,7 +53,7 @@ const DealsStatus = [
         name: "Raitech Soft",
         date: 'Sep 23, 2021',
         profile: 'assets/images/users/avatar-2.jpg',
-        userName: 'Sofia Cunha',
+        userName: 'Bandar bin Ibrahim',
         status: "Intro Call",
         value: "150K"
     },
@@ -61,7 +61,7 @@ const DealsStatus = [
         name: "William PVT",
         date: 'Sep 27, 2021',
         profile: 'assets/images/users/avatar-3.jpg',
-        userName: 'Luis Rocha',
+        userName: 'Yousef bin Abdullah',
         status: "Stuck",
         value: "78.18K"
     },
@@ -69,7 +69,7 @@ const DealsStatus = [
         name: "Loiusee LLP",
         date: 'Sep 30, 2021',
         profile: 'assets/images/users/avatar-4.jpg',
-        userName: 'Vitoria Rodrigues',
+        userName: 'Dr. Esam A. AlWagait',
         status: "Deal Won",
         value: "180K"
     },
@@ -77,7 +77,7 @@ const DealsStatus = [
         name: "Apple Inc.",
         date: 'Sep 30, 2021',
         profile: 'assets/images/users/avatar-6.jpg',
-        userName: 'Vitoria Rodrigues',
+        userName: 'Dr. Esam A. AlWagait',
         status: "New Lead",
         value: "78.9K"
     }
@@ -118,7 +118,7 @@ const UpcomingActivities = [
         content: 'Adding a new event with attachments',
         users: [
             {
-                name: 'Frida Bang',
+                name: 'Dr. Hamad bin Mohammed',
                 profile: 'assets/images/users/avatar-4.jpg'
             },
             {
@@ -224,7 +224,7 @@ const ClosingDeals = [
     {
         name: "Absternet LLC",
         profile: 'assets/images/users/avatar-4.jpg',
-        userName: 'Vitoria Rodrigues',
+        userName: 'Dr. Esam A. AlWagait',
         amount: "89.5k",
         date: "20 Sep 2021"
     }

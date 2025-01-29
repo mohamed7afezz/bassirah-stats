@@ -77,19 +77,3 @@
     }
 
 }
-
-
-/*****************/
-.big-cards {
-    .d-flex {
-    flex-direction: column-reverse;
-    gap: 24px;
-    justify-content: center !important;
-    align-items: center;
-    text-align: center;
-  }
-  .fw-medium{
-	    font-size: 22px;
-        color: rgb(27, 131, 84) !important;
-    }
-}
