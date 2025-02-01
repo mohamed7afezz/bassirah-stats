@@ -28,35 +28,35 @@ export class GrossDomesticProductComponent {
   private fetchData() {
     this. MainAuthors = [
       {
-          name: "Dr. Hamad bin Mohammed",
+          name: "Mohammed bin Mohammed",
           date: 'Sep 20, 2024',
           profile: 'assets/images/users/avatar-1.jpg',
           publications: "140",
           percentage: "15%"
       },
       {
-          name: "Bandar bin Ibrahim",
+          name: "Bandar Mohammed",
           date: 'Sep 23, 2024',
           profile: 'assets/images/users/avatar-2.jpg',
           publications: "350",
           percentage: "35%"
       },
       {
-          name: "Yousef bin Abdullah",
+          name: "Abdullah Mohammed",
           date: 'Sep 27, 2024',
           profile: 'assets/images/users/avatar-3.jpg',
           publications: "87",
           percentage: "12%"
       },
       {
-          name: "Dr. Esam A. AlWagait",
+          name: "Mohammed Rashid",
           date: 'Sep 30, 2024',
           profile: 'assets/images/users/avatar-4.jpg',
           publications: "153",
           percentage: "17%"
       },
       {
-          name: "Mr. David Wayne Kalisch",
+          name: "Rashid Ibrahim",
           date: 'Sep 30, 2024',
           profile: 'assets/images/users/avatar-6.jpg',
           publications: "250",
@@ -97,8 +97,8 @@ export class GrossDomesticProductComponent {
     ];
   }
 
-  // Chart Colors Set
-  private getChartColorsArray(colors:any) {
+    // Chart Colors Set
+    private getChartColorsArray(colors:any) {
     colors = JSON.parse(colors);
     return colors.map(function (value:any) {
       var newValue = value.replace(" ", "");
@@ -129,7 +129,7 @@ export class GrossDomesticProductComponent {
       colors = this.getChartColorsArray(colors);
       this.zoomableTimeseriesChart = {
         series: [{
-          name: 'XYZ MOTORS',
+          name: 'Price',
           data: [
               {
                 x: new Date('2020-09-01').getTime(),
@@ -208,7 +208,7 @@ export class GrossDomesticProductComponent {
           size: 0,
         },
         title: {
-          text: 'Stock Price Movement',
+          text: 'Million of Saudi Riyals',
           align: 'left',
           style: {
             fontWeight: 500,
@@ -241,7 +241,6 @@ export class GrossDomesticProductComponent {
         },
         xaxis: {
           type: 'datetime',
-
         },
         tooltip: {
           shared: false,

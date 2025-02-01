@@ -32,7 +32,7 @@ export class ChatComponent implements OnInit {
   submitted = false;
   isStatus: string = 'online';
   isProfile: string = 'assets/images/users/avatar-2.jpg';
-  username: any = 'Lisa Parker';
+  username: any = 'Momtaz Ahmet';
   @ViewChild('scrollRef') scrollRef:any;
   images: { src: string; thumb: string; caption: string }[] = [];
   isreplyMessage = false;

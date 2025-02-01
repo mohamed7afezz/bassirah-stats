@@ -10,7 +10,8 @@ import { WorkflowModuleComponent } from './workflow-module/workflow-module.compo
 import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
 // Indecators
 import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-domestic-product/gross-domestic-product.component';
-
+import { EconomicStatisticsComponent } from './process-management/Statistics/economic-statistics/economic-statistics.component';
+import { DashboardsStatisticsComponent } from './process-management/Statistics/dashboards-statistics/dashboards-statistics.component';
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 
@@ -20,6 +21,12 @@ const routes: Routes = [
     },
     {
       path: 'process_management', component: ProcessManagementComponent 
+    },
+    {
+      path: 'economic-statistics', component: EconomicStatisticsComponent
+    },
+    {
+      path: 'economic-statistics/dashboards-statistics', component: DashboardsStatisticsComponent
     },
     {
       path: 'collaboration', component: CollaborationComponent 

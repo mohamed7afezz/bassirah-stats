@@ -118,23 +118,23 @@ const UpcomingActivities = [
         content: 'Adding a new event with attachments',
         users: [
             {
-                name: 'Dr. Hamad bin Mohammed',
+                name: 'Ahemd bin Said',
                 profile: 'assets/images/users/avatar-4.jpg'
             },
             {
-                name: 'Malou Silva',
+                name: 'Mohammed Yahya',
                 profile: 'assets/images/users/avatar-5.jpg'
             },
             {
-                name: 'Simon Schmidt',
+                name: 'Yahya Khalid',
                 profile: 'assets/images/users/avatar-6.jpg'
             },
             {
-                name: 'Tosh Jessen',
+                name: 'Khalid Mohammed',
                 profile: 'assets/images/users/avatar-7.jpg'
             },
             {
-                name: '3',
+                name: '4',
                 variant: "bg-success"
             }
         ]
@@ -146,19 +146,19 @@ const UpcomingActivities = [
         content: 'Create new project Bundling Product',
         users: [
             {
-                name: 'Nina Schmidt',
+                name: 'Orimer Rashid',
                 profile: 'assets/images/users/avatar-8.jpg'
             },
             {
-                name: 'Stine Nielsen',
+                name: 'Rashid Khaled',
                 profile: 'assets/images/users/avatar-1.jpg'
             },
             {
-                name: 'Jansh Brown',
+                name: 'Ahemd Khaled',
                 profile: 'assets/images/users/avatar-2.jpg'
             },
             {
-                name: '4',
+                name: '7',
                 variant: "bg-primary"
             }
         ]
@@ -170,15 +170,15 @@ const UpcomingActivities = [
         content: 'Weekly closed sales won checking with sales team',
         users: [
             {
-                name: 'Stine Nielsen',
+                name: 'Mohamed Khaled',
                 profile: 'assets/images/users/avatar-1.jpg'
             },
             {
-                name: 'Jansh Brown',
+                name: 'Orimer',
                 profile: 'assets/images/users/avatar-5.jpg'
             },
             {
-                name: 'Dan Gibson',
+                name: 'Ibrahim Ahemd',
                 profile: 'assets/images/users/avatar-2.jpg'
             },
             {

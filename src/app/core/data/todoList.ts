@@ -176,16 +176,16 @@ const todoList = [
   ];
   
   const todoAssigned = [
-    { id: 1, profile: "avatar-1.jpg", name: "Anna Adame" },
-    { id: 2, profile: "avatar-2.jpg", name: "Herbert Stokes" },
-    { id: 3, profile: "avatar-3.jpg", name: "Frank Hook" },
-    { id: 4, profile: "avatar-4.jpg", name: "Mary Gant" },
-    { id: 5, profile: "avatar-5.jpg", name: "Nancy Martino" },
-    { id: 6, profile: "avatar-6.jpg", name: "Alexis Clarke" },
-    { id: 7, profile: "avatar-7.jpg", name: "Michael Morris" },
-    { id: 8, profile: "avatar-8.jpg", name: "Thomas Taylor" },
-    { id: 9, profile: "avatar-9.jpg", name: "Diego Norris" },
-    { id: 10, profile: "avatar-10.jpg", name: "Tonya Noble" },
+    { id: 1, profile: "avatar-1.jpg", name: "abdullah Asad" },
+    { id: 2, profile: "avatar-2.jpg", name: "Asad Nasser" },
+    { id: 3, profile: "avatar-3.jpg", name: "Nasser Asad" },
+    { id: 4, profile: "avatar-4.jpg", name: "Yaser abdullah" },
+    { id: 5, profile: "avatar-5.jpg", name: "Abdullah Abdourahman" },
+    { id: 6, profile: "avatar-6.jpg", name: "Abdourahman Asad" },
+    { id: 7, profile: "avatar-7.jpg", name: "Inam Hamza" },
+    { id: 8, profile: "avatar-8.jpg", name: "Inam Hamza" },
+    { id: 9, profile: "avatar-9.jpg", name: "Arafat" },
+    { id: 10, profile: "avatar-10.jpg", name: "Hkim abdullah" },
   ];
   
   const todoProject = [

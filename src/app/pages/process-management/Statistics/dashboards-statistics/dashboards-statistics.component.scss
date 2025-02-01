@@ -1,0 +1,11 @@
+.btn {
+	width: auto;
+}
+.btn-primary.btn-animation {
+	background-color: var(--vz-primary);
+	border-color: var(--vz-primary) !important;
+	&:focus {
+		background-color: var(--vz-primary);
+		border-color: var(--vz-primary) !important;
+	}
+}

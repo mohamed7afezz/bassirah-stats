@@ -19,7 +19,7 @@
 
       <div class="row">
           <div class="col-xl-6">
-              <div class="card card-animate">
+              <div class="card card-animate d-none">
                     <div class="card-header text-center p-4">
                       <h4 class="card-title mb-0">Upcoming Indicator Publications</h4>
                     </div><!-- end card header -->
@@ -31,8 +31,25 @@
                         </div>
                     </div><!-- end card body -->
                 </div> <!-- end card-->
+              <!-- Primary Alert -->
+                <div class="alert alert-primary alert-dismissible material-shadow alert-additional fade show" role="alert">
+                <div class="alert-body">
+                    <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                            <i class="ri-user-smile-line fs-16 align-middle"></i>
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="alert-heading">Upcoming Indicator Publications</h5>
+                            <p class="mb-0">Aww yeah, you successfully read this important alert message.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert-content">
+                    <p class="mb-0  fw-bold fs-4">3 Upcoming Publications</p>
+                </div>
+                </div>
 
-              <div class="card card-animate">
+              <div class="card card-animate pb-4">
                   <div class="card-header text-center p-4">
                       <h4 class="card-title mb-0">Indicator’s Top Historical Publications</h4>
                   </div><!-- end card header -->
@@ -49,11 +66,11 @@
                         <tbody>
                             @for ( data of TopHistoricalPublication; track $index) {
                             <tr>
-                                <td style="padding-left: 24px;">
+                                <td style="padding: 16px 24px 16px;">
                                     <a target="_blank" href="{{data.PDFURL}}">{{data.PDFName}}</a>
                                 </td>
-                                <td style="padding-left: 24px;">{{data.year}}</td>
-                                <td style="padding-left: 24px;">{{data.quarter}}</td>
+                                <td style="padding: 16px 24px 16px;">{{data.year}}</td>
+                                <td style="padding: 16px 24px 16px;">{{data.quarter}}</td>
                             </tr><!-- end -->
                             }
                         </tbody><!-- end tbody -->
@@ -107,9 +124,8 @@
       <div class="row">
           <div class="col-xl-6">
               <div class="card card-animate">
-                  <div class="card-header text-center">
+                  <div class="card-header text-center p-4">
                       <h4 class="card-title mb-0">Gross Domestic Product By Main Economic  Activities at Current Prices</h4>
-                      <span class="">(Million of Saudi Riyals)</span>
                   </div><!-- end card header -->
 
                   <div class="card-body">
@@ -141,7 +157,45 @@
 
       <div class="row">
           <div class="col-xl-6">
-              <div class="card card-animate">
+
+              <div class="card">
+           <div class="card-header text-center p-4">
+              <h4 class="card-title mb-0">Relation to Indicators & Predictors</h4>
+          </div><!-- end card header -->
+          <div class="card-body">
+              <div class="sitemap-content">
+                  <figure class="sitemap-horizontal">
+                      <ul class="administration">
+                          <li>
+                              <ul class="director">
+                                  <li>
+                                      <a href="javascript:void(0);" class="fw-semibold"><span>Economic Indicators</span></a>
+                                      <ul class="departments">
+                                          <li><a href="javascript:void(0);" class="fw-semibold"><span>Gross Domestic Product (GDP)</span></a></li>
+
+                                          <li class="department">
+                                              <a href="javascript:void(0);" class="fw-semibold"><span>Consumption</span></a>
+                                          </li>
+                                          <li class="department">
+                                              <a href="javascript:void(0);" class="fw-semibold"><span>Investment</span></a>
+                                          </li>
+                                          <li class="department">
+                                              <a href="javascript:void(0);" class="fw-semibold"><span>Government Spending</span></a>
+                                          </li>
+                                          <li class="department">
+                                              <a href="javascript:void(0);" class="fw-semibold"><span>Net Exports</span></a>
+                                          </li>
+                                      </ul>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </figure>
+              </div><!--end sitemap-content-->
+          </div><!--end card-body-->
+      </div><!--end card-->
+
+              <div class="card card-animate d-none">
                   <div class="card-header text-center p-4">
                       <h4 class="card-title mb-0">Relation to Indicators & Predictors</h4>
                   </div><!-- end card header -->

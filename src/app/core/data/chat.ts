@@ -27,47 +27,47 @@ const groupData = [
    const chatData = [
     {
         image: 'assets/images/users/avatar-2.jpg',
-        name: 'Lisa Parker',
+        name: 'KAZIM Majid',
         status: 'online'
     },
     {
         image: 'assets/images/users/avatar-3.jpg',
-        name: 'Frank Thomas',
+        name: 'Majid Ahmed',
         status: 'online',
         unread: '8'
     },
     {
-      name: 'Clifford Taylor',
+      name: 'Zishan Majid',
       status: 'away'
     },
     {
         image: 'assets/images/users/avatar-4.jpg',
-        name: 'Janette Caster',
+        name: 'Abdurraheem Ahmet',
         status: 'online'
     },
     {
         image: 'assets/images/users/avatar-5.jpg',
-        name: 'Sarah Beattie',
+        name: 'Iraku Ahmet',
         status: 'online',
         unread: '5'
     },
     {
         image: 'assets/images/users/avatar-6.jpg',
-        name: 'Nellie Cornett',
+        name: 'Abdu Ahmet',
         status: 'away',
         unread: '2'
     },
     {
-        name: 'Chris Kiernan',
+        name: 'Mustafa  Osama',
         status: 'online'
     },
     {
-        name: 'Edith Evans',
+        name: 'Osama Mustafa',
         status: 'away'
     },
     {
         image: 'assets/images/users/avatar-7.jpg',
-        name: 'Joseph Siegel',
+        name: 'Saud Omr',
         status: 'away'
     },
   ];
@@ -118,7 +118,7 @@ const groupData = [
         title: 'A',
         contacts: [
             {
-                name: 'Alice Cruickshank',
+                name: 'khalil Arafat',
             }
           ],
     },
@@ -126,7 +126,7 @@ const groupData = [
         title: 'B',
         contacts: [
             {
-                name: 'Barrett Brown',
+                name: 'Ahmad khalil',
                 profile:'assets/images/users/avatar-4.jpg'
             }
         ],
@@ -135,10 +135,10 @@ const groupData = [
         title: 'C',
         contacts: [
             {
-                name: 'Chris Kiernan',
+                name: 'Iraku Ahmad',
             },
             {
-                name: 'Clifford Taylor',
+                name: 'Kadi Iraku',
             }
         ],
     },
@@ -146,7 +146,7 @@ const groupData = [
         title: 'E',
         contacts: [
             {
-                name: 'Edith Evans',
+                name: 'Momtaz Kadi',
             }
         ],
     },
@@ -154,7 +154,7 @@ const groupData = [
         title: 'F',
         contacts: [
             {
-                name: 'Frank Thomas',
+                name: 'Majid Momtaz',
                 profile:'assets/images/users/avatar-3.jpg'
             }
         ],
@@ -171,15 +171,15 @@ const groupData = [
         title: 'J',
         contacts: [
             {
-                name: 'Janette Caster',
+                name: 'Mustafa Ahmad',
                 profile:'assets/images/users/avatar-4.jpg'
             },
             {
-                name: 'Joseph Siegel',
+                name: 'Ahmad Omr',
                 profile:'assets/images/users/avatar-7.jpg'
             },
             {
-                name: 'Justyn Wisoky',
+                name: 'Omr Ahmad',
                 profile:'assets/images/users/avatar-1.jpg'
             }
         ],
@@ -188,7 +188,7 @@ const groupData = [
         title: 'K',
         contacts: [
             {
-                name: 'Keaton King',
+                name: 'Arafat',
                 profile:'assets/images/users/avatar-5.jpg'
             }
         ],
@@ -197,7 +197,7 @@ const groupData = [
         title: 'L',
         contacts: [
             {
-                name: 'Lisa Parker',
+                name: 'Abdullah Asad',
                 profile:'assets/images/users/avatar-2.jpg'
             }
         ],
@@ -206,7 +206,7 @@ const groupData = [
         title: 'M',
         contacts: [
             {
-                name: 'Marian Moen'
+                name: 'Asad Nasser'
             }
         ],
     },
@@ -214,7 +214,7 @@ const groupData = [
         title: 'N',
         contacts: [
             {
-                name: 'Nellie Cornett',
+                name: 'Hkim abdullah',
                 profile:'assets/images/users/avatar-6.jpg'
             }
         ],
@@ -223,7 +223,7 @@ const groupData = [
         title: 'R',
         contacts: [
             {
-                name: 'Ronald Downey'
+                name: 'Inam Hamza'
             }
         ],
     },
@@ -249,7 +249,7 @@ const groupData = [
         title: 'W',
         contacts: [
             {
-                name: 'Wayne Runte',
+                name: 'Nasser Asad',
                 profile:'assets/images/users/avatar-2.jpg'
             }
         ],

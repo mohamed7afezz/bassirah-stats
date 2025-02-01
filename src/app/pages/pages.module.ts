@@ -39,7 +39,8 @@ import { DataVisualizationComponent } from './data-visualization/data-visualizat
 import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
 import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
 import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-domestic-product/gross-domestic-product.component';
-
+import { EconomicStatisticsComponent } from './process-management/Statistics/economic-statistics/economic-statistics.component';
+import { DashboardsStatisticsComponent } from './process-management/Statistics/dashboards-statistics/dashboards-statistics.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,9 @@ import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-d
     DataVisualizationComponent,
     WorkflowModuleComponent,
     DataWranglingComponent,
-    GrossDomesticProductComponent
+    GrossDomesticProductComponent,
+    EconomicStatisticsComponent,
+    DashboardsStatisticsComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

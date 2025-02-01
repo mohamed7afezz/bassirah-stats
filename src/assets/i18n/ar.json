@@ -14,6 +14,15 @@
     "PROCESS_MANAGEMENT":{
       "TEXT": "إدارة العمليات (I-Organize)"
     },
+    "ECONOMIC_STATISTICS":{
+      "TEXT": "الإحصاءات الاقتصادية"
+    },
+    "SOCIAL_STATISTICS":{
+      "TEXT": "الإحصاءات الاجتماعية"
+    },
+    "SPATIAL_RESOURCES_STATISTICS":{
+      "TEXT": "الإحصاءات المكانية والموارد"
+    },
     "DATA_VISUALIZATION":{
       "TEXT": "تصور البيانات (I-Present)"
     },

@@ -11,6 +11,15 @@
     "PROCESS_MANAGEMENT":{
       "TEXT": "Process Management (I-Organize)"
     },
+    "ECONOMIC_STATISTICS":{
+      "TEXT": "Economic Statistics"
+    },
+    "SOCIAL_STATISTICS":{
+      "TEXT": "Social Statistics"
+    },
+    "SPATIAL_RESOURCES_STATISTICS":{
+      "TEXT": "Spatial and Resources Statistics"
+    },
     "DATA_VISUALIZATION":{
       "TEXT": "Data Visualization (I-Present)"
     },

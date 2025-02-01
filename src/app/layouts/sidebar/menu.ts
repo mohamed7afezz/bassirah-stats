@@ -11,7 +11,27 @@ export const MENU: MenuItem[] = [
     id: 201,
     label: 'MENUITEMS.PROCESS_MANAGEMENT.TEXT',
     icon: 'ri-booklet-line',
-    link: '/process_management'
+    isCollapsed: true,
+    subItems: [
+      {
+        id: 210,
+        label: 'MENUITEMS.ECONOMIC_STATISTICS.TEXT',
+        link: '/economic-statistics',
+        parentId: 201
+      },
+      {
+        id: 211,
+        label: 'MENUITEMS.SOCIAL_STATISTICS.TEXT',
+        link: '/social-statistics',
+        parentId: 201
+      },
+      {
+        id: 211,
+        label: 'MENUITEMS.SPATIAL_RESOURCES_STATISTICS.TEXT',
+        link: '/spatial-resources-statistics',
+        parentId: 201
+      },
+    ]
   },
   {
     id: 202,
@@ -47,7 +67,6 @@ export const MENU: MenuItem[] = [
     id: 207,
     label: 'MENUITEMS.COLLABORATION.TEXT',
     icon: 'ri-message-2-fill',
-    link: '/collaboration',
     isCollapsed: true,
     subItems: [
       {
