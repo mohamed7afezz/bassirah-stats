@@ -12,13 +12,13 @@
       "TEXT": "Process Management (I-Organize)"
     },
     "ECONOMIC_STATISTICS":{
-      "TEXT": "Economic Statistics"
+      "TEXT": "Economic Statistics department"
     },
     "SOCIAL_STATISTICS":{
-      "TEXT": "Social Statistics"
+      "TEXT": "Social Statistics department"
     },
     "SPATIAL_RESOURCES_STATISTICS":{
-      "TEXT": "Spatial and Resources Statistics"
+      "TEXT": "Spatial and Resources Statistics department"
     },
     "DATA_VISUALIZATION":{
       "TEXT": "Data Visualization (I-Present)"
@@ -36,7 +36,9 @@
       "TEXT": "Workflow (I-Plan)"
     },
     "COLLABORATION":{
-      "TEXT": "Collaboration (I-Communicate)"
+      "TEXT": "Collaboration (I-Communicate)",
+      "ITEM": "Indicator & Data Documentation",
+      "ITEM2": "User Logs"
     },
     "MENU": {
       "TEXT": "MENU"

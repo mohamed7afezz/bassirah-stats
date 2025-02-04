@@ -6,7 +6,7 @@
                   <div class="card-body p-0">
                       <div class="row align-items-center">
                             <div  class="d-flex justify-content-center align-items-center">
-                                <h1  class="main-head text-center p-5 m-0">Add Dashboards Statistics</h1>
+                                <h1  class="main-head text-center p-5 m-0">Add Dashboards Workflow</h1>
                             </div>
                       </div>
                       <div class="pb-5 row align-items-center gap-4 justify-content-center flex-row">
@@ -31,7 +31,7 @@
 
                             <button
                               type="button"
-                              (click)="changeImage('workflow3.jpeg', 'group-analysis')"
+                              (click)="changeImage('Workflow3.png', 'group-analysis')"
                               [ngClass]="{'btn-primary text-white': activeButton === 'group-analysis'}"
                               class="fw-bold btn-lg btn-animation btn btn-outline-primary waves-effect waves-light material-shadow-none"
                             >
@@ -40,7 +40,7 @@
 
                             <button
                               type="button"
-                              (click)="changeImage('workflow2.jpeg', 'original-workflow')"
+                              (click)="changeImage('Workflow2.png', 'original-workflow')"
                               [ngClass]="{'btn-primary text-white': activeButton === 'original-workflow'}"
                               class="fw-bold btn-lg btn-animation btn btn-outline-primary waves-effect waves-light material-shadow-none"
                             >
@@ -52,6 +52,104 @@
               </div>
           </div> <!-- end col-->
       </div> <!-- end row-->
+
+
+      <div class="row big-cards justify-content-center">
+          <div class="{{ activeButton === 'check-compliance' ? 'col-md-3 d-block':  'd-none' }}">
+             <a routerLink="/" class="" >
+                <div class="card card-animate">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="fw-medium text-muted mb-0"> Average Compliance (80%) </p>
+                                <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                                    <span class="counter-value" >80% Compliance</span>
+                                </h2>
+                            </div>
+                            <div>
+                                <div class="avatar-sm flex-shrink-0">
+                                    <span class="fs-2 avatar-title bg-success-subtle rounded-circle fs-3">
+                                        <i class="las la-boxes"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end card body -->
+                </div> <!-- end card-->
+              </a>
+          </div>
+          <div class="{{ activeButton === 'check-compliance' ? 'col-md-3':  'col-md-4' }}">
+             <a routerLink="/" class="" >
+                <div class="card card-animate">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="fw-medium text-muted mb-0"> Average Workflow Duration (Days) </p>
+                                <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                                    <span class="counter-value" >38 Days</span>
+                                </h2>
+                            </div>
+                            <div>
+                                <div class="avatar-sm flex-shrink-0">
+                                    <span class="fs-2 avatar-title bg-success-subtle rounded-circle fs-3">
+                                        <i class="las la-network-wired"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end card body -->
+                </div> <!-- end card-->
+              </a>
+          </div>
+
+          <div class="{{ activeButton === 'check-compliance' ? 'col-md-3':  'col-md-4' }}">
+             <a routerLink="/" class="" >
+                <div class="card card-animate">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="fw-medium text-muted mb-0"> Total Cases Completed </p>
+                                <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                                    <span class="counter-value" >78 Cases</span>
+                                </h2>
+                            </div>
+                            <div>
+                                <div class="avatar-sm flex-shrink-0">
+                                    <span class="fs-2 avatar-title bg-success-subtle rounded-circle fs-3">
+                                        <i class="las la-check-double"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end card body -->
+                </div> <!-- end card-->
+              </a>
+          </div>
+
+          <div class="{{ activeButton === 'check-compliance' ? 'col-md-3':  'col-md-4' }}">
+             <a routerLink="/" class="" >
+                <div class="card card-animate">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <p class="fw-medium text-muted mb-0"> Re-Work (%) </p>
+                                <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
+                                    <span class="counter-value" >25% Re-Work</span>
+                                </h2>
+                            </div>
+                            <div>
+                                <div class="avatar-sm flex-shrink-0">
+                                    <span class="fs-2 avatar-title bg-success-subtle rounded-circle fs-3">
+                                        <i class="las la-boxes "></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- end card body -->
+                </div> <!-- end card-->
+              </a>
+          </div>
+      </div>
 
       <div class="row">
           <div class="col-12 m-auto">

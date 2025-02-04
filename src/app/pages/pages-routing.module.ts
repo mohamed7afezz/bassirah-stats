@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Indicator360Component } from "./indicator360/indicator360.component"; // Import the component
-import { ProcessManagementComponent } from './process-management/process-management.component'; 
+import { ProcessManagementComponent } from './process-management/process-management.component';
+
+//Collaboration Module
 import { CollaborationComponent } from './collaboration/collaboration.component';
+import { IndicatorDataDocumentationComponent } from './collaboration/indicator-data-documentation/indicator-data-documentation.component';
+import { UserLogsComponent } from './collaboration/user-logs/user-logs.component';
+
+
 import { DataAnalyticsComponent } from './data-analytics/data-analytics.component';
 import { StatisticalDataMartComponent } from './statistical-data-mart/statistical-data-mart.component';
 import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
@@ -29,7 +35,10 @@ const routes: Routes = [
       path: 'economic-statistics/dashboards-statistics', component: DashboardsStatisticsComponent
     },
     {
-      path: 'collaboration', component: CollaborationComponent 
+      path: 'collaboration/indicator-data-documentation', component: IndicatorDataDocumentationComponent
+    },
+    {
+      path: 'collaboration/user-logs', component: UserLogsComponent
     },
     {
       path: 'data_analytics', component: DataAnalyticsComponent 

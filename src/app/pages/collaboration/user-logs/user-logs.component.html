@@ -1,0 +1,99 @@
+<div class="row">
+  <div class="col-xxl-12">
+      <div class="row">
+          <div class="col-12 m-auto">
+              <div class="card">
+                  <div class="card-body p-0">
+                      <div class="row align-items-center">
+                            <div  class="d-flex justify-content-center align-items-center">
+                                <h1  class="main-head text-center p-5 m-0"> User Logs </h1>
+                            </div>
+                      </div>
+
+                  </div> <!-- end card-body-->
+              </div>
+          </div> <!-- end col-->
+      </div> <!-- end row-->
+
+
+      <div class="row">
+          <div class="col-12 m-auto">
+              <div class="card">
+                  <div class="card-body p-5 text-start">
+                       <div class="row justify-content-center align-items-center">
+                            <!-- Form Section -->
+                            
+                             <!-- Form Section -->
+                            <form
+                              name="UserLogs"
+                              action=""
+                              class="col-12 col-md-8 col-lg-6"
+                              (ngSubmit)="onSubmit()"
+                              [formGroup]="form"
+                              *ngIf="showForm"
+                            >
+                              <div class="mb-4">
+                                  <label for="LogsFrom" class="form-label fs-5">Choose User Logs</label>
+                                  <select  formControlName="UserName" id="select" class="form-select-lg form-select">
+                                        <option value="">Choose User</option>
+                                        <option value="Ahmed abd Hamed">Ahmed abd Hamed</option>
+                                        <option value="Abdurraheem Ahmed">Abdurraheem Ahmed</option>
+                                        <option value="Khaled Osman">Khaled Osman</option>
+                                        <option value="Fahed ben Ibarahim">Fahed ben Ibarahim</option>
+                                        <option value="Ziaad El Mahmoudy">Ziaad El Mahmoudy</option>
+                                  </select>
+                                <!-- Validation message for dropdown -->
+                                <div *ngIf="form.get('UserName')?.invalid && form.get('UserName')?.touched" class="text-danger">
+                                  Please select an indicator or data model.
+                                </div>
+                              </div>
+                                <div class="mb-4">
+                                  <label for="LogsFrom" class="form-label fs-5">LogsFrom</label>
+                                  <input
+                                    formControlName="LogsFrom"
+                                    type="date"
+                                    class="form-control form-control-lg"
+                                    id="LogsFrom"
+                                    placeholder="Enter Logs From"
+                                  />
+                                  <!-- Validation message for LogsFrom -->
+                                  <div *ngIf="form.get('LogsFrom')?.invalid && form.get('LogsFrom')?.touched" class="text-danger">
+                                    Logs From is required.
+                                  </div>
+                                </div>
+
+                                <div class="mb-4">
+                                  <label for="LogsTo" class="form-label fs-5">Logs To</label>
+                                  <input
+                                    formControlName="LogsTo"
+                                    type="date"
+                                    class="form-control form-control-lg"
+                                    id="LogsTo"
+                                    placeholder="Enter Logs To"
+                                  />
+                                  <!-- Validation message for LogsTo -->
+                                  <div *ngIf="form.get('LogsTo')?.invalid && form.get('LogsTo')?.touched" class="text-danger">
+                                    Logs To is required.
+                                  </div>
+                                </div>
+
+                                <div class="text-end">
+                                  <button type="submit" class="btn w-100 btn-lg btn-primary">
+                                    Show Logs
+                                  </button>
+                                </div>
+                            </form>
+                             <!-- Thank You Message Section -->
+                            <div *ngIf="showThankYouMessage" class="col-12 col-md-10 col-lg-8 thank-you-message">
+                              <div class="alert alert-success text-center fs-3 mb-4">
+                                Logs For User: {{ User_Name }}
+                              </div>
+                               <img class="w-100" src="assets/images/users/logs/{{ User_Name }}.png">
+                            </div>
+                       </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

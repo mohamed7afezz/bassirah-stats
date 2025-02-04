@@ -2,6 +2,8 @@
 	max-width: 350px;
 	margin: 32px auto 0 !important;
 }
-.modal-dialog {
-	max-width: 600px;
+
+.modal.show .modal-dialog {
+	transform: none;
+	max-width: 750px;
 }

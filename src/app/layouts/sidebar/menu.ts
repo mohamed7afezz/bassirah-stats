@@ -71,8 +71,13 @@ export const MENU: MenuItem[] = [
     subItems: [
       {
         id: 208,
-        label: 'MENUITEMS.COLLABORATION.TEXT',
-        link: '/collaboration',
+        label: 'MENUITEMS.COLLABORATION.ITEM',
+        link: 'collaboration/indicator-data-documentation',
+        parentId: 8
+      },{
+        id: 208,
+        label: 'MENUITEMS.COLLABORATION.ITEM2',
+        link: 'collaboration/user-logs',
         parentId: 8
       },
       {

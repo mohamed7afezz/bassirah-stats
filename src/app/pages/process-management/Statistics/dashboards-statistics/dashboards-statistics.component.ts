@@ -5,12 +5,12 @@ import {NgClass} from "@angular/common";
 @Component({
   selector: 'app-dashboards-statistics',
   standalone: true,
-  imports: [RouterLink, NgClass],
+  imports: [RouterLink, NgClass, RouterOutlet],
   templateUrl: './dashboards-statistics.component.html',
   styleUrl: './dashboards-statistics.component.scss'
 })
 export class DashboardsStatisticsComponent {
-  imagename : string  = "workflow2.jpeg";
+  imagename : string  = "Workflow2.png";
   activeButton: string = 'original-workflow';
 
   changeImage( imagename: string ,activeButton:string     ) {

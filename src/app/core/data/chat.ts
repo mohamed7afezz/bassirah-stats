@@ -27,33 +27,33 @@ const groupData = [
    const chatData = [
     {
         image: 'assets/images/users/avatar-2.jpg',
-        name: 'KAZIM Majid',
+        name: 'Ahmed abd Hamed',
         status: 'online'
     },
     {
         image: 'assets/images/users/avatar-3.jpg',
-        name: 'Majid Ahmed',
+        name: 'Hamed Ahmed',
         status: 'online',
         unread: '8'
     },
     {
-      name: 'Zishan Majid',
+      name: 'Zishan Hamed',
       status: 'away'
     },
     {
         image: 'assets/images/users/avatar-4.jpg',
-        name: 'Abdurraheem Ahmet',
+        name: 'Abdurraheem Ahmed',
         status: 'online'
     },
     {
         image: 'assets/images/users/avatar-5.jpg',
-        name: 'Iraku Ahmet',
+        name: 'Mahmoud Ahmed',
         status: 'online',
         unread: '5'
     },
     {
         image: 'assets/images/users/avatar-6.jpg',
-        name: 'Abdu Ahmet',
+        name: 'Abdu Ahmed',
         status: 'away',
         unread: '2'
     },
@@ -135,10 +135,10 @@ const groupData = [
         title: 'C',
         contacts: [
             {
-                name: 'Iraku Ahmad',
+                name: 'Mahmoud Ahmad',
             },
             {
-                name: 'Kadi Iraku',
+                name: 'Kadi Mahmoud',
             }
         ],
     },
@@ -154,7 +154,7 @@ const groupData = [
         title: 'F',
         contacts: [
             {
-                name: 'Majid Momtaz',
+                name: 'Hamed Momtaz',
                 profile:'assets/images/users/avatar-3.jpg'
             }
         ],

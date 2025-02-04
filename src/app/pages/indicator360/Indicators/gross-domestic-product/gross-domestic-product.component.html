@@ -9,7 +9,10 @@
                       <div class="row align-items-end">
                             <div  class="d-flex justify-content-between align-items-center">
                                 <h1  class="main-head text-center p-5 m-0"><i  class="las la-hand-holding-usd"></i> Gross Domestic Product (GDP)</h1>
-                                <div class="d-flex flex-column p-5"><span data-target="1700000" class="counter-value">1700000</span><span  class="badge bg-light text-success mb-0" ><i  class="align-middle ri-arrow-up-line" ></i> 6.25 % </span></div>
+                                <div class="d-flex flex-column p-5">
+                                    <span [countUp]="1700000" class="counter-value" ></span>
+                                     <div><span  class="badge bg-light text-success mb-0" ><i  class="align-middle ri-arrow-up-line" ></i> 6.25 % </span> Million of Saudi Riyals</div>
+                                </div>
                             </div>
                       </div>
                   </div> <!-- end card-body-->

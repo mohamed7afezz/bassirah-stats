@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import {NgApexchartsModule} from "ng-apexcharts";
+import {CountUpModule} from "ngx-countup";
 
 @Component({
   selector: 'app-gross-domestic-product',
   standalone: true,
   imports: [
-    NgApexchartsModule
+    NgApexchartsModule,CountUpModule
   ],
   templateUrl: './gross-domestic-product.component.html',
   styleUrl: './gross-domestic-product.component.scss'

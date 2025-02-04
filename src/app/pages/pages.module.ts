@@ -33,6 +33,8 @@ import { EcommerceModule } from "./ecommerce/ecommerce.module";
 import { Indicator360Component } from "./indicator360/indicator360.component";
 import { ProcessManagementComponent } from './process-management/process-management.component'; 
 import { CollaborationComponent } from './collaboration/collaboration.component';
+import { IndicatorDataDocumentationComponent } from './collaboration/indicator-data-documentation/indicator-data-documentation.component';
+import { UserLogsComponent } from './collaboration/user-logs/user-logs.component';
 import { DataAnalyticsComponent } from './data-analytics/data-analytics.component';
 import { StatisticalDataMartComponent } from './statistical-data-mart/statistical-data-mart.component';
 import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
@@ -69,6 +71,9 @@ import { DashboardsStatisticsComponent } from './process-management/Statistics/d
     Indicator360Component,
     ProcessManagementComponent,
     CollaborationComponent,
+    IndicatorDataDocumentationComponent,
+    UserLogsComponent,
+
     DataAnalyticsComponent,
     StatisticalDataMartComponent,
     DataVisualizationComponent,

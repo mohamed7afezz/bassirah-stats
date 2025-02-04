@@ -98,3 +98,7 @@
 .navbar-menu .navbar-nav .nav-link.active {
 	color: var(--vz-vertical-menu-item-color) !important;
 }
+
+.modal.show .modal-dialog{
+    max-width: 750px;
+}

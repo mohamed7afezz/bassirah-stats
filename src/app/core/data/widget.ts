@@ -478,7 +478,7 @@ const widgetsActivities = [
         time: "04:30pm - 07:15pm",
         caption: "Create new project Bundling Product",
         subItem: [
-            { id: 1, img: 'assets/images/users/avatar-8.jpg', name: 'Kadi Ahmet' },
+            { id: 1, img: 'assets/images/users/avatar-8.jpg', name: 'Kadi Ahmed' },
             { id: 2, img: 'assets/images/users/avatar-1.jpg', name: 'Saud Mohammed' },
             { id: 3, img: 'assets/images/users/avatar-2.jpg', name: 'Mohammed Hkim' },
             { id: 4, imgNumber: "4", bgcolor: "bg-primary" },
@@ -493,7 +493,7 @@ const widgetsActivities = [
         subItem: [
             { id: 1, img: 'assets/images/users/avatar-1.jpg', name: 'Khaled Mohammed' },
             { id: 2, img: 'assets/images/users/avatar-5.jpg', name: 'Arda Khaled' },
-            { id: 3, img: 'assets/images/users/avatar-2.jpg', name: 'Hkim Iraku' },
+            { id: 3, img: 'assets/images/users/avatar-2.jpg', name: 'Hkim Mahmoud' },
             { id: 4, imgNumber: "9", bgcolor: "bg-warning" },
         ],
     },
