@@ -27,14 +27,8 @@ const groupData = [
    const chatData = [
     {
         image: 'assets/images/users/avatar-2.jpg',
-        name: 'sallam abdallah',
+        name: 'Ahmed abd Hamed',
         status: 'online'
-    },
-    {
-        image: 'assets/images/users/avatar-3.jpg',
-        name: 'Abdulaziz bin Alibrahim',
-        status: 'online',
-        unread: '8'
     },
     {
       name: 'Abdallah Dahshan',
@@ -47,28 +41,19 @@ const groupData = [
     },
     {
         image: 'assets/images/users/avatar-5.jpg',
-        name: 'Ahmed bin Fadel',
+        name: 'Khaled Osman',
         status: 'online',
         unread: '5'
     },
     {
         image: 'assets/images/users/avatar-6.jpg',
-        name: 'Faisal Sulaiman',
+        name: 'Fahed ben Ibarahim',
         status: 'away',
         unread: '2'
     },
     {
-        name: 'Mustafa Abdulaziz',
+        name: 'Ziaad El Mahmoudy',
         status: 'online'
-    },
-    {
-        name: 'Abdulaziz  Khalid',
-        status: 'away'
-    },
-    {
-        image: 'assets/images/users/avatar-7.jpg',
-        name: 'Saud abd Elhamid',
-        status: 'away'
     },
   ];
   
@@ -118,140 +103,41 @@ const groupData = [
         title: 'A',
         contacts: [
             {
-                name: 'khalil Arafat',
-            }
+                profile : 'assets/images/users/avatar-2.jpg',
+                name : 'Ahmed abd Hamed',
+            },
+            {
+              profile : 'assets/images/users/avatar-3.jpg',
+              name : 'Abdurraheem Ahmed',
+            },
           ],
     },
     {
-        title: 'B',
+        title: 'K',
         contacts: [
+           
             {
-                name: 'Ahmad khalil',
-                profile:'assets/images/users/avatar-4.jpg'
-            }
-        ],
-    },
-    {
-        title: 'C',
-        contacts: [
-            {
-                name: 'Mahmoud Ahmad',
+                name : 'Khaled Osman',
             },
-            {
-                name: 'Kadi Mahmoud',
-            }
-        ],
-    },
-    {
-        title: 'E',
-        contacts: [
-            {
-                name: 'Momtaz Kadi',
-            }
         ],
     },
     {
         title: 'F',
         contacts: [
+            
             {
-                name: 'Hamed Momtaz',
-                profile:'assets/images/users/avatar-3.jpg'
-            }
-        ],
-    },
-    {
-        title: 'G',
-        contacts: [
-            {
-                name: 'Gilbert Beer'
-            }
-        ],
-    },
-    {
-        title: 'J',
-        contacts: [
-            {
-                name: 'Mustafa Ahmad',
-                profile:'assets/images/users/avatar-4.jpg'
+                profile : 'assets/images/users/avatar-4.jpg',
+                name : 'Fahed ben Ibarahim',
             },
-            {
-                name: 'Ahmad Omr',
-                profile:'assets/images/users/avatar-7.jpg'
-            },
-            {
-                name: 'Omr Ahmad',
-                profile:'assets/images/users/avatar-1.jpg'
-            }
         ],
     },
     {
-        title: 'K',
+        title: 'Z',
         contacts: [
             {
-                name: 'Arafat',
-                profile:'assets/images/users/avatar-5.jpg'
-            }
-        ],
-    },
-    {
-        title: 'L',
-        contacts: [
-            {
-                name: 'Abdullah Asad',
-                profile:'assets/images/users/avatar-2.jpg'
-            }
-        ],
-    },
-    {
-        title: 'M',
-        contacts: [
-            {
-                name: 'Asad Nasser'
-            }
-        ],
-    },
-    {
-        title: 'N',
-        contacts: [
-            {
-                name: 'Hkim abdullah',
-                profile:'assets/images/users/avatar-6.jpg'
-            }
-        ],
-    },
-    {
-        title: 'R',
-        contacts: [
-            {
-                name: 'Inam Hamza'
-            }
-        ],
-    },
-    {
-        title: 'S',
-        contacts: [
-            {
-                name: 'Sarah Beattie',
-                profile:'assets/images/users/avatar-5.jpg'
-            }
-        ],
-    },
-    {
-        title: 'V',
-        contacts: [
-            {
-                name: 'Victor Beahan',
-                profile:'assets/images/users/avatar-10.jpg'
-            }
-        ],
-    },
-    {
-        title: 'W',
-        contacts: [
-            {
-                name: 'Nasser Asad',
-                profile:'assets/images/users/avatar-2.jpg'
-            }
+                profile : 'assets/images/users/avatar-5.jpg',
+                name : 'Ziaad El Mahmoudy',
+              },
         ],
     },
   ];

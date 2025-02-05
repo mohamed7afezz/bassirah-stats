@@ -32,11 +32,32 @@ export class ChatComponent implements OnInit {
   submitted = false;
   isStatus: string = 'online';
   isProfile: string = 'assets/images/users/avatar-2.jpg';
-  username: any = 'Momtaz Ahmed';
+  username: any = 'Ahmed abd Hamed';
   @ViewChild('scrollRef') scrollRef:any;
   images: { src: string; thumb: string; caption: string }[] = [];
   isreplyMessage = false;
   emoji = '';
+  newPersonal = [
+    {
+      image : 'assets/images/users/avatar-2.jpg',
+      name : 'Ahmed abd Hamed',
+    },
+    {
+      image : 'assets/images/users/avatar-3.jpg',
+      name : 'Abdurraheem Ahmed',
+    },
+    {
+      name : 'Khaled Osman',
+    },
+    {
+      image : 'assets/images/users/avatar-4.jpg',
+      name : 'Fahed ben Ibarahim',
+    },
+    {
+      image : 'assets/images/users/avatar-5.jpg',
+      name : 'Ziaad El Mahmoudy',
+    },
+  ]
 
   constructor(public formBuilder: UntypedFormBuilder, private lightbox: Lightbox, private datePipe: DatePipe, private offcanvasService: NgbOffcanvas) { 
     for (let i = 1; i <= 24; i++) {
