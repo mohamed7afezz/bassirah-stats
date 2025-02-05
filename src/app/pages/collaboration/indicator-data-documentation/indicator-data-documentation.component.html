@@ -125,13 +125,12 @@
                                 </div>
                                 <div class="mb-5">
                                   <label for="Frequency" class="form-label fs-5">Frequency</label>
-                                  <input
-                                    formControlName="frequency"
-                                    type="text"
-                                    class="form-control form-control-lg"
-                                    id="Frequency"
-                                    placeholder="Enter Frequency"
-                                  />
+                                    <select formControlName="frequency" id="Frequency" class="form-select-lg form-select">
+                                        <option value="">Choose Frequency</option>
+                                        <option value="Annually">Annually</option>
+                                        <option value="Quarterly">Quarterly</option>
+                                        <option value="Monthly">Monthly</option>
+                                    </select>
                                   <!-- Validation message for frequency -->
                                   <div *ngIf="form.get('frequency')?.invalid && form.get('frequency')?.touched" class="text-danger">
                                     Frequency is required.
@@ -224,7 +223,7 @@
                                 <!-- Submit Button -->
                                 <div class="text-end">
                                   <button type="submit" class="btn w-100 btn-lg btn-primary">
-                                    Add Workflow
+                                    Add Approval Cycle
                                   </button>
                                 </div>
                               </div>
@@ -240,7 +239,7 @@
                            <!-- Thank You Message Section -->
                             <div *ngIf="showThankYouMessageWF" class="col-12 col-md-8 col-lg-6 thank-you-message">
                               <div class="alert alert-success text-center fs-3">
-                                Thank You! Your Workflow has been added successfully.
+                                Thank You! Your Approval Cycle has been added successfully.
                               </div>
                             </div>
                        </div>

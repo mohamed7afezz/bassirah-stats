@@ -1,0 +1,38 @@
+
+ <div class="row nav-pills-info">
+  <div class="col-lg-3">
+      <div class="" role="tablist" aria-orientation="vertical">
+        <ul ngbNav #CustomVertical="ngbNav" [activeId]="5" class="nav nav-pills flex-column nav-pills-tab custom-verti-nav-pills text-center">
+          <li [ngbNavItem]="1">
+              <a ngbNavLink class="p-4 fw-bold fs-14">
+               Foreign Direct Investment
+              </a>
+              <ng-template ngbNavContent>
+                <app-foreign-direct-investment></app-foreign-direct-investment>
+              </ng-template>
+          </li>
+          <li [ngbNavItem]="2">
+              <a ngbNavLink  class="p-4 fw-bold fs-14">
+                Short Term Business Statistics
+              </a>
+              <ng-template ngbNavContent>
+                <app-short-term-business-dtatistics></app-short-term-business-dtatistics>
+              </ng-template>
+          </li>
+          <li [ngbNavItem]="3">
+              <a ngbNavLink  class="p-4 fw-bold fs-14">
+                Industrial Production Index
+              </a>
+              <ng-template ngbNavContent>
+                <app-industrial-production-index></app-industrial-production-index>
+              </ng-template>
+          </li>
+        </ul>
+      </div>
+  </div> <!-- end col-->
+  <div class="col-lg-9">
+      <div class="tab-content text-muted mt-3 mt-lg-0">
+        <div [ngbNavOutlet]="CustomVertical"></div>
+      </div>
+  </div> <!-- end col-->
+</div> <!-- end row-->

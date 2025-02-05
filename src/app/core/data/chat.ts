@@ -27,17 +27,17 @@ const groupData = [
    const chatData = [
     {
         image: 'assets/images/users/avatar-2.jpg',
-        name: 'Ahmed abd Hamed',
+        name: 'sallam abdallah',
         status: 'online'
     },
     {
         image: 'assets/images/users/avatar-3.jpg',
-        name: 'Hamed Ahmed',
+        name: 'Abdulaziz bin Alibrahim',
         status: 'online',
         unread: '8'
     },
     {
-      name: 'Zishan Hamed',
+      name: 'Abdallah Dahshan',
       status: 'away'
     },
     {
@@ -47,27 +47,27 @@ const groupData = [
     },
     {
         image: 'assets/images/users/avatar-5.jpg',
-        name: 'Mahmoud Ahmed',
+        name: 'Ahmed bin Fadel',
         status: 'online',
         unread: '5'
     },
     {
         image: 'assets/images/users/avatar-6.jpg',
-        name: 'Abdu Ahmed',
+        name: 'Faisal Sulaiman',
         status: 'away',
         unread: '2'
     },
     {
-        name: 'Mustafa  Osama',
+        name: 'Mustafa Abdulaziz',
         status: 'online'
     },
     {
-        name: 'Osama Mustafa',
+        name: 'Abdulaziz  Khalid',
         status: 'away'
     },
     {
         image: 'assets/images/users/avatar-7.jpg',
-        name: 'Saud Omr',
+        name: 'Saud abd Elhamid',
         status: 'away'
     },
   ];
