@@ -36,7 +36,9 @@
       "TEXT": "تحليلات البيانات (I-Analyze)"
     },
     "WORKFLOW":{
-      "TEXT": "سير العمل (I-Plan)"
+      "TEXT": "سير العمل (I-Plan)",
+      "CAC": "Create Approve Cycle",
+      "CW": "Create Workflow"
     },
     "COLLABORATION":{
       "TEXT": "التعاون (I-Communicate)"

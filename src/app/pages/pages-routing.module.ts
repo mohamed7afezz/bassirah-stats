@@ -4,15 +4,20 @@ import { Indicator360Component } from "./indicator360/indicator360.component"; /
 import { ProcessManagementComponent } from './process-management/process-management.component';
 
 //Collaboration Module
-import { CollaborationComponent } from './collaboration/collaboration.component';
 import { IndicatorDataDocumentationComponent } from './collaboration/indicator-data-documentation/indicator-data-documentation.component';
 import { UserLogsComponent } from './collaboration/user-logs/user-logs.component';
+
 
 
 import { DataAnalyticsComponent } from './data-analytics/data-analytics.component';
 import { StatisticalDataMartComponent } from './statistical-data-mart/statistical-data-mart.component';
 import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
+
 import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
+import { CreateApproveCycleComponent } from "./workflow-module/create-approve-cycle/create-approve-cycle.component";
+import { CreateWorkflowComponent } from "./workflow-module/create-workflow/create-workflow.component";
+
+
 import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
 // Indecators
 import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-domestic-product/gross-domestic-product.component';
@@ -51,6 +56,12 @@ const routes: Routes = [
     },
     {
       path: 'workflow', component: WorkflowModuleComponent 
+    },
+    {
+      path: 'workflow/create-approve-cycle', component: CreateApproveCycleComponent
+    },
+     {
+      path: 'workflow/create-workflow', component: CreateWorkflowComponent
     },
     {
       path: 'data_wrangling', component: DataWranglingComponent 

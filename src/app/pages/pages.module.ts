@@ -39,6 +39,8 @@ import { DataAnalyticsComponent } from './data-analytics/data-analytics.componen
 import { StatisticalDataMartComponent } from './statistical-data-mart/statistical-data-mart.component';
 import { DataVisualizationComponent } from './data-visualization/data-visualization.component';
 import { WorkflowModuleComponent } from './workflow-module/workflow-module.component';
+import { CreateApproveCycleComponent } from "./workflow-module/create-approve-cycle/create-approve-cycle.component";
+import { CreateWorkflowComponent } from "./workflow-module/create-workflow/create-workflow.component";
 import { DataWranglingComponent } from './data-wrangling/data-wrangling.component';
 import { GrossDomesticProductComponent } from './indicator360/Indicators/gross-domestic-product/gross-domestic-product.component';
 import { EconomicStatisticsComponent } from './process-management/Statistics/economic-statistics/economic-statistics.component';
@@ -77,7 +79,11 @@ import { DashboardsStatisticsComponent } from './process-management/Statistics/d
     DataAnalyticsComponent,
     StatisticalDataMartComponent,
     DataVisualizationComponent,
+
     WorkflowModuleComponent,
+    CreateApproveCycleComponent,
+    CreateWorkflowComponent,
+
     DataWranglingComponent,
     GrossDomesticProductComponent,
     EconomicStatisticsComponent,

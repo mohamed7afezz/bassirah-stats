@@ -1,38 +1,38 @@
-
- <div class="row nav-pills-info">
-  <div class="col-lg-3">
-      <div class="" role="tablist" aria-orientation="vertical">
-        <ul ngbNav #CustomVertical="ngbNav" [activeId]="5" class="nav nav-pills flex-column nav-pills-tab custom-verti-nav-pills text-center">
-          <li [ngbNavItem]="1">
-              <a ngbNavLink class="p-4 fw-bold fs-14">
-                 Tourism, Hajj and Umrah Statistics
-              </a>
-              <ng-template ngbNavContent>
-                <app-tourism-hajj-and-umrah-statistics></app-tourism-hajj-and-umrah-statistics>
-              </ng-template>
-          </li>
-          <li [ngbNavItem]="2">
-              <a ngbNavLink  class="p-4 fw-bold fs-14">
-                Environment Statistics
-              </a>
-              <ng-template ngbNavContent>
-                <app-environment-statistics></app-environment-statistics>
-              </ng-template>
-          </li>
-          <li [ngbNavItem]="3">
-              <a ngbNavLink class="p-4 fw-bold fs-14">
-                Agriculture Census
-              </a>
-              <ng-template ngbNavContent>
-                <app-agriculture-census></app-agriculture-census>
-              </ng-template>
-          </li>
-        </ul>
-      </div>
+<div class="row nav-pills-info flex-column">
+  <div class="col-lg-8 mb-4 m-auto">
+    <div class="" role="tablist" aria-orientation="vertical">
+      <ul ngbNav #CustomVertical="ngbNav" [activeId]="5"
+        class="nav gap-4 second-level nav-pills flex-row nav-pills-tab custom-verti-nav-pills text-center">
+        <li [ngbNavItem]="1">
+          <a ngbNavLink class="p-4 fw-bold fs-14">
+            Tourism, Hajj and Umrah Statistics
+          </a>
+          <ng-template ngbNavContent>
+            <app-tourism-hajj-and-umrah-statistics></app-tourism-hajj-and-umrah-statistics>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink class="p-4 fw-bold fs-14">
+            Environment Statistics
+          </a>
+          <ng-template ngbNavContent>
+            <app-environment-statistics></app-environment-statistics>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+          <a ngbNavLink class="p-4 fw-bold fs-14">
+            Agriculture Census
+          </a>
+          <ng-template ngbNavContent>
+            <app-agriculture-census></app-agriculture-census>
+          </ng-template>
+        </li>
+      </ul>
+    </div>
   </div> <!-- end col-->
-  <div class="col-lg-9">
-      <div class="tab-content text-muted mt-3 mt-lg-0">
-        <div [ngbNavOutlet]="CustomVertical"></div>
-      </div>
+  <div class="col-lg-12">
+    <div class="tab-content text-muted mt-3 mt-lg-0">
+      <div [ngbNavOutlet]="CustomVertical"></div>
+    </div>
   </div> <!-- end col-->
 </div> <!-- end row-->

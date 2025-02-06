@@ -1,54 +1,53 @@
-
 <div class="row  tabs-data-mart">
   <div class="col-xxl-12">
-      <div class="row">
-          <div class="col-12">
-              <div class="card">
-                  <div class="card-body">
-                      <div class="row">
-                          <div class="col-lg-2">
-                              <div class="" role="tablist" aria-orientation="vertical">
-                                <ul ngbNav #CustomVertical="ngbNav" [activeId]="5" class="nav nav-pills flex-column nav-pills-tab custom-verti-nav-pills text-center">
-                                  <li [ngbNavItem]="1">
-                                      <a ngbNavLink>
-                                        <i class="ri-home-4-line d-block fs-20 mb-1"></i>
-                                        Economic Statistics
-                                      </a>
-                                      <ng-template ngbNavContent>
-                                        <!---------   Start Layer one   ------------->
-                                        <app-economic-statistics-items></app-economic-statistics-items>
-                                      </ng-template>
-                                  </li>
-                                  <li [ngbNavItem]="2">
-                                      <a ngbNavLink>
-                                        <i class="ri-user-2-line d-block fs-20 mb-1"></i>
-                                        Social Statistics
-                                      </a>
-                                      <ng-template ngbNavContent>
-                                          <app-social-statistics-items></app-social-statistics-items>
-                                      </ng-template>
-                                  </li>
-                                  <li [ngbNavItem]="3">
-                                      <a ngbNavLink>
-                                        <i class="ri-mail-line d-block fs-20 mb-1"></i>
-                                        Spatial & Resources Statistics
-                                      </a>
-                                      <ng-template ngbNavContent>
-                                         <app-spatial-resources-statistics-items></app-spatial-resources-statistics-items>
-                                      </ng-template>
-                                  </li>
-                                </ul>
-                              </div>
-                          </div> <!-- end col-->
-                          <div class="col-lg-10">
-                              <div class="tab-content text-muted mt-3 mt-lg-0">
-                                <div [ngbNavOutlet]="CustomVertical"></div>
-                              </div>
-                          </div> <!-- end col-->
-                      </div> <!-- end row-->
-                  </div><!-- end card-body -->
-              </div><!--end card-->
-          </div> <!-- end col-->
-      </div> <!-- end row-->
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row flex-column">
+              <div class="col-lg-12 m-auto">
+                <div class="" role="tablist" aria-orientation="vertical">
+                  <ul ngbNav #CustomVertical="ngbNav" [activeId]="5"
+                    class="nav gap-4 mb-5 first-level nav-pills flex-row nav-pills-tab custom-verti-nav-pills text-center">
+                    <li [ngbNavItem]="1">
+                      <a ngbNavLink>
+                        <i class="las la-chart-area d-block fs-20 mb-1"></i>
+                        Economic Statistics
+                      </a>
+                      <ng-template ngbNavContent>
+                        <app-economic-statistics-items></app-economic-statistics-items>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                      <a ngbNavLink>
+                        <i class="las la-business-time  d-block fs-20 mb-1"></i>
+                        Social Statistics
+                      </a>
+                      <ng-template ngbNavContent>
+                        <app-social-statistics-items></app-social-statistics-items>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="3">
+                      <a ngbNavLink>
+                        <i class="las la-signal d-block fs-20 mb-1"></i>
+                        Spatial & Resources Statistics
+                      </a>
+                      <ng-template ngbNavContent>
+                        <app-spatial-resources-statistics-items></app-spatial-resources-statistics-items>
+                      </ng-template>
+                    </li>
+                  </ul>
+                </div>
+              </div> <!-- end col-->
+              <div class="col-lg-12">
+                <div class="tab-content text-muted mt-3 mt-lg-0">
+                  <div [ngbNavOutlet]="CustomVertical"></div>
+                </div>
+              </div> <!-- end col-->
+            </div> <!-- end row-->
+          </div><!-- end card-body -->
+        </div><!--end card-->
+      </div> <!-- end col-->
+    </div> <!-- end row-->
   </div> <!-- end col-->
 </div> <!-- end row-->

@@ -9,34 +9,13 @@
                                 <h1  class="main-head text-center p-5 m-0"> Indicator & Data Documentation </h1>
                             </div>
                       </div>
-                      <div class="pb-5 row align-items-center gap-4 justify-content-center flex-row">
-
-                          <button
-                              type="button"
-                              (click)="ShowForm('Documentation')"
-                              [ngClass]="{'btn-primary text-white': showForm === 'Documentation'}"
-                              class="fw-bold btn-lg btn-animation btn btn-outline-primary waves-effect waves-light material-shadow-none"
-                            >
-                              Create Documentation
-                            </button>
-
-                            <button
-                              type="button"
-                              (click)="ShowForm('Approval-Cycle')"
-                              [ngClass]="{'btn-primary text-white': showForm === 'Approval-Cycle'}"
-                              class="fw-bold btn-lg btn-animation btn btn-outline-primary waves-effect waves-light material-shadow-none"
-                            >
-                              Create Approval Cycle
-                            </button>
-
-                      </div>
                   </div> <!-- end card-body-->
               </div>
           </div> <!-- end col-->
       </div> <!-- end row-->
 
 
-      <div class="row" *ngIf="(showForm === 'Documentation') || (showForm === 'Approval-Cycle') || showThankYouMessage || showThankYouMessageWF">
+      <div class="row">
           <div class="col-12 m-auto">
               <div class="card">
                   <div class="card-body p-5 text-start">
@@ -48,35 +27,76 @@
                               name="Documentation"
                               action=""
                               class="col-12 col-md-8 col-lg-6"
-                              *ngIf="showForm === 'Documentation'"
+                              *ngIf="showForm"
                               (ngSubmit)="onSubmit()"
                               [formGroup]="form"
                             >
-                              <div class="mb-4">
-                                <label for="select" class="form-label d-block fs-3 text-center">
-                                  Choose indicator or Data Model
-                                </label>
-                                <select [(ngModel)]="selectedValue"
-                                  formControlName="selectedValue"
-                                  id="select"
-                                  class="form-select-lg form-select"
-                                >
-                                  <option value="">Choose indicator or Data Model</option>
-                                  <option value="Gross Domestic Product (GDP)">
-                                    Gross Domestic Product (GDP)
-                                  </option>
-                                  <option value="ICT Employment Rate">ICT Employment Rate</option>
-                                  <option value="Total Exports">Total Exports</option>
-                                  <option value="Total Imports">Total Imports</option>
-                                  <option value="Consumer Price Index">Consumer Price Index</option>
-                                  <option value="Life Expectancy at Birth">Life Expectancy at Birth</option>
-                                  <option value="Electricity In Household">Electricity In Household</option>
-                                </select>
-                                <!-- Validation message for dropdown -->
-                                <div *ngIf="form.get('selectedValue')?.invalid && form.get('selectedValue')?.touched" class="text-danger">
-                                  Please select an indicator or data model.
+                                 <div class="mb-4">
+                                    <label for="department" class="form-label fs-5">Choose department</label>
+                                    <select
+                                      [(ngModel)]="department"
+                                      formControlName="department"
+                                      id="department"
+                                      class="form-select-lg form-select"
+                                    >
+                                      <option value="">-- select department --</option>
+                                      <option value="Economic Statistics">Economic Statistics</option>
+                                      <option value="Social Statistics">Social Statistics</option>
+                                      <option value="Spatial & Resources Statistics">Spatial & Resources Statistics</option>
+                                    </select>
+                                    <!-- Validation message for workflow selection -->
+                                    <div *ngIf="form.get('department')?.invalid && form.get('department')?.touched" class="text-danger">
+                                      Please select a department.
+                                    </div>
                                 </div>
-                              </div>
+
+                                <div class="mb-4"  *ngIf="form.get('department')?.value !== ''">
+                                    <label for="topic" class="form-label fs-5">Choose Topic</label>
+                                    <select
+                                      [(ngModel)]="topic"
+                                      formControlName="topic"
+                                      id="topic"
+                                      class="form-select-lg form-select"
+                                    >
+                                      <option value="">-- select Topic --</option>
+                                      <option value="">Choose Topic</option>
+                                        <option value="Foreign Direct Investment">Foreign Direct Investment</option>
+                                        <option value="Short Term Business Statistics">Short Term Business Statistics</option>
+                                        <option value="Industrial Production Index">Industrial Production Index</option>
+                                        <option value="Labor Market Statistics">Labor Market Statistics</option>
+                                        <option value="Health Care Statistics">Health Care Statistics</option>
+                                        <option value="Health Determinants Statistics">Health Determinants Statistics</option>
+                                        <option value="Tourism, Hajj and Umrah Statistics">Tourism, Hajj and Umrah Statistics</option>
+                                        <option value="Environment Statistics">Environment Statistics</option>
+                                        <option value="Agriculture Census">Agriculture Census</option>
+                                    </select>
+                                    <!-- Validation message for workflow selection -->
+                                    <div *ngIf="form.get('topic')?.invalid && form.get('topic')?.touched" class="text-danger">
+                                      Please select a topic.
+                                    </div>
+                                </div>
+
+                                <div class="mb-4" *ngIf="form.get('topic')?.value !== ''">
+                                    <label for="department" class="form-label fs-5">Choose indicator or Data Model</label>
+                                    <select [(ngModel)]="selectedValue"
+                                      formControlName="selectedValue"
+                                      id="select"
+                                      class="form-select-lg form-select"
+                                    >
+                                      <option value="">Choose indicator or Data Model</option>
+                                      <option value="Gross Domestic Product (GDP)">Gross Domestic Product (GDP)</option>
+                                      <option value="ICT Employment Rate">ICT Employment Rate</option>
+                                      <option value="Total Exports">Total Exports</option>
+                                      <option value="Total Imports">Total Imports</option>
+                                      <option value="Consumer Price Index">Consumer Price Index</option>
+                                      <option value="Life Expectancy at Birth">Life Expectancy at Birth</option>
+                                      <option value="Electricity In Household">Electricity In Household</option>
+                                    </select>
+                                    <!-- Validation message for dropdown -->
+                                    <div *ngIf="form.get('selectedValue')?.invalid && form.get('selectedValue')?.touched" class="text-danger">
+                                      Please select an indicator or data model.
+                                    </div>
+                                </div>
 
                               <div *ngIf="form.get('selectedValue')?.value !== ''">
                                 <div class="mb-4">
@@ -144,91 +164,6 @@
                               </div>
                             </form>
 
-
-                           <!--------             Approval Cycle                     -------->
-                            <form
-                              name="Approval-Cycle"
-                              action=""
-                              class="col-12 col-md-8 col-lg-6"
-                              *ngIf="showForm === 'Approval-Cycle'"
-                              (ngSubmit)="onSubmitWF(form)"
-                              #form="ngForm"
-                            >
-                              <div class="mb-4">
-                                <label for="selectworkflow" class="form-label d-block fs-3 text-center">
-                                  Choose Workflow
-                                </label>
-                                <select
-                                  [(ngModel)]="selectedValueWF"
-                                  name="selectworkflow"
-                                  id="selectworkflow"
-                                  class="form-select-lg form-select"
-                                  required
-                                >
-                                  <option value="">Choose Workflow</option>
-                                  <option value="Add APIs Workflow">Add APIs Workflow</option>
-                                  <option value="Add Dashboards Workflow">Add Dashboards Workflow</option>
-                                  <option value="Add Tables Workflow">Add Tables Workflow</option>
-                                </select>
-                                <!-- Validation message for workflow selection -->
-                                <div
-                                  *ngIf="form.submitted && form.controls['selectworkflow']?.errors?.['required']"
-                                  class="text-danger"
-                                >
-                                  Please select a workflow.
-                                </div>
-                              </div>
-
-                              <div *ngIf="selectedValueWF !== ''">
-                                <!-- Reviewer Fields -->
-                                <div *ngFor="let reviewer of reviewers" class="mb-4">
-                                  <label [for]="'Add-Reviewer-' + reviewer.id" class="form-label fs-5">
-                                    {{ reviewer.label }}
-                                  </label>
-                                  <select
-                                    [(ngModel)]="reviewer.selectedReviewer"
-                                    [name]="'Add-Reviewer-' + reviewer.id"
-                                    [id]="'Add-Reviewer-' + reviewer.id"
-                                    class="form-select-lg form-select"
-                                    required
-                                  >
-                                    <option value="">Add Reviewer</option>
-                                    <option value="Ahmed abd Hamed">Ahmed abd Hamed</option>
-                                    <option value="Abdurraheem Ahmed">Abdurraheem Ahmed</option>
-                                    <option value="Khaled Osman">Khaled Osman</option>
-                                    <option value="Fahed ben Ibarahim">Fahed ben Ibarahim</option>
-                                    <option value="Ziaad El Mahmoudy">Ziaad El Mahmoudy</option>
-                                  </select>
-                                  <!-- Validation message for reviewer selection -->
-                                  <div
-                                    *ngIf="form.submitted && !reviewer.selectedReviewer"
-                                    class="text-danger"
-                                  >
-                                    Please select a reviewer.
-                                  </div>
-                                </div>
-
-                                <!-- Plus Icon to Add Reviewer -->
-                                <div class="mb-4 d-flex justify-content-end">
-                                  <button [ngClass]="{'disabled': reviewers.length >= 5}"
-                                    type="button"
-                                    class="btn rounded-pill btn-outline-primary btn-lg d-flex align-items-center gap-2"
-                                    (click)="addReviewer()"
-                                  >
-                                    <i class="las la-plus-circle"></i> Add Reviewer
-                                  </button>
-                                    <!-- Rounded Buttons -->
-                                </div>
-
-                                <!-- Submit Button -->
-                                <div class="text-end">
-                                  <button type="submit" class="btn w-100 btn-lg btn-primary">
-                                    Add Approval Cycle
-                                  </button>
-                                </div>
-                              </div>
-                            </form>
-
                            <!-- Thank You Message Section -->
                             <div *ngIf="showThankYouMessage" class="col-12 col-md-8 col-lg-6 thank-you-message">
                               <div class="alert alert-success text-center fs-3">
@@ -236,12 +171,7 @@
                               </div>
                             </div>
 
-                           <!-- Thank You Message Section -->
-                            <div *ngIf="showThankYouMessageWF" class="col-12 col-md-8 col-lg-6 thank-you-message">
-                              <div class="alert alert-success text-center fs-3">
-                                Thank You! Your Approval Cycle has been added successfully.
-                              </div>
-                            </div>
+
                        </div>
                   </div>
               </div>

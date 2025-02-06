@@ -33,7 +33,9 @@
       "TEXT": "Data Analytics (I-Analyze)"
     },
     "WORKFLOW":{
-      "TEXT": "Workflow (I-Plan)"
+      "TEXT": "Workflow (I-Plan)",
+      "CAC": "Create Approve Cycle",
+      "CW": "Create Workflow"
     },
     "COLLABORATION":{
       "TEXT": "Collaboration (I-Communicate)",

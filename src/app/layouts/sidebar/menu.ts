@@ -58,10 +58,24 @@ export const MENU: MenuItem[] = [
     link: '/data_analytics'
   },
   {
-    id: 206,
+    id: 300,
     label: 'MENUITEMS.WORKFLOW.TEXT',
     icon: 'ri-flow-chart',
-    link: '/workflow'
+    link: '/workflow',
+    subItems: [
+      {
+        id: 301,
+        label: 'MENUITEMS.WORKFLOW.CAC',
+        link: 'workflow/create-approve-cycle',
+        parentId: 201
+      },
+      {
+        id: 302,
+        label: 'MENUITEMS.WORKFLOW.CW',
+        link: 'workflow/create-workflow',
+        parentId: 201
+      }
+    ]
   },
   {
     id: 207,
