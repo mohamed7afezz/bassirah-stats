@@ -36,7 +36,7 @@ export class AuthenticationEffects {
               sessionStorage.setItem('toast', 'true');
               sessionStorage.setItem('currentUser', JSON.stringify(user.data));
               sessionStorage.setItem('token', user.token);
-              this.router.navigate(['/']);
+              this.router.navigate(['/indicator360']);
             }
             return loginSuccess({ user });
           }),
