@@ -12,7 +12,7 @@
                                 <p class="fw-medium text-muted mb-0">{{stat.title}}</p>
                                 <h2 class="mt-4 ff-secondary cfs-22 fw-semibold">
                                     <span [countUp]="stat.value" class="counter-value" ></span>
-                                    @if (stat.title == "Electricity In Household") {
+                                    @if (stat.title == "Electricity In Household" || stat.title == "Health Care Statistics") {
                                         <span>%</span>
                                     }
                                 </h2>
