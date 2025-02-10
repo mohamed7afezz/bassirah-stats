@@ -67,14 +67,31 @@ export class Indicator360Component {
         icon: 'la-baby-carriage',
         persantage: '0.38',
         profit: 'up'
-      }, {
+      }, 
+      {
         title: 'Electricity In Household',
         link_url: 'indicator360/web-interactions-and-data-requests',
         value: 28.50,
         icon: 'la-plug',
         persantage: '11.33',
         profit: 'up'
-      }
+      },
+      {
+        title: 'Tourism, Hajj and Umrah Statistics',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+        icon: 'la-plug',
+        persantage: '11.33',
+        profit: 'up'
+      },
+      {
+        title: ' Agriculture Census',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+        icon: 'la-plug',
+        persantage: '11.33',
+        profit: 'up'
+      },
     ];
   }
 }
