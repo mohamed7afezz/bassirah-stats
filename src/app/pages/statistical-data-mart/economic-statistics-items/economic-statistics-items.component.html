@@ -1,30 +1,38 @@
 <div class="row nav-pills-info flex-column">
-  <div class="col-lg-8 m-auto mb-4">
+  <div class="col-lg-12 m-auto mb-4">
     <div class="" role="tablist" aria-orientation="vertical">
       <ul ngbNav #CustomVertical="ngbNav" [activeId]="5"
         class="nav gap-4 second-level nav-pills flex-row nav-pills-tab custom-verti-nav-pills text-center">
         <li [ngbNavItem]="1">
           <a ngbNavLink class="p-4 fw-bold fs-14">
-            Foreign Direct Investment
+            GDP and National Accounts
           </a>
           <ng-template ngbNavContent>
-            <app-foreign-direct-investment></app-foreign-direct-investment>
+            <app-gdp-and-national-accounts></app-gdp-and-national-accounts>
           </ng-template>
         </li>
         <li [ngbNavItem]="2">
           <a ngbNavLink class="p-4 fw-bold fs-14">
-            Short Term Business Statistics
+            Prices
           </a>
           <ng-template ngbNavContent>
-            <app-short-term-business-dtatistics></app-short-term-business-dtatistics>
+           <app-prices></app-prices>
           </ng-template>
         </li>
         <li [ngbNavItem]="3">
           <a ngbNavLink class="p-4 fw-bold fs-14">
-            Industrial Production Index
+            International Trade
           </a>
           <ng-template ngbNavContent>
-            <app-industrial-production-index></app-industrial-production-index>
+            <app-international-trade></app-international-trade>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="4">
+          <a ngbNavLink class="p-4 fw-bold fs-14">
+            Energy
+          </a>
+          <ng-template ngbNavContent>
+            <app-energy></app-energy>
           </ng-template>
         </li>
       </ul>

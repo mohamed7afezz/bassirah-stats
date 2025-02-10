@@ -1,0 +1,248 @@
+<div class="card box-shadow-none">
+    <div class="card-body">
+        <!-- Nav tabs -->
+        <ul ngbNav #ModifierCustom="ngbNav" [activeId]="1" class="nav nav-pills nav-customs nav-danger mb-3">
+            <li [ngbNavItem]="1">
+                <a ngbNavLink class="nav-link">
+                 value of trade balance
+                </a>
+                <ng-template ngbNavContent>
+                    <div class="card">
+                      <div class="border">
+                        <ul ngbNav #CustomHover="ngbNav" [activeId]="2" class="nav nav-pills custom-hover-nav-tabs">
+                            <li [ngbNavItem]="1">
+                              <a class="p-4" ngbNavLink>
+                                 <i class="ri-barcode-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Indicator CODE</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Indicator CODE</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        EfFt040401
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                            <li [ngbNavItem]="2">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-file-text-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Brief Description</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Brief Description</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                       Trade balance by country
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                            <li [ngbNavItem]="3">
+                              <a class="p-4" ngbNavLink>
+                                <i class="bx bx-detail nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Indicator Detailed Definition</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Indicator Detailed Definition</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        It is the difference between the value of exports and the value of imports between the Kingdom of Saudi Arabia and a country
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                            <li [ngbNavItem]="4">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-rfid-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Frequency</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Frequency</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        Annual
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+
+                            <li [ngbNavItem]="5">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-shapes-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Unit</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Unit</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        Million SAR
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+
+                            <li [ngbNavItem]="6">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-article-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">More Info</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">More Info</h6>
+                                <div class="table-responsive">
+                                    <p></p>
+                                </div>
+                              </ng-template>
+                            </li>
+
+
+                            <li [ngbNavItem]="7">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-calendar-schedule-fill nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Last Update</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Last Update</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        28/11/2022
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                          <div class="tab-content text-muted">
+                            <div [ngbNavOutlet]="CustomHover"></div>
+                          </div>
+                      </div><!-- end card-body -->
+                    </div>
+                </ng-template>
+            </li>
+
+            <li [ngbNavItem]="2">
+                <a ngbNavLink class="nav-link">
+                 Value of  trade exchange volume
+                </a>
+                <ng-template ngbNavContent>
+                    <div class="card">
+                      <div class="border">
+                        <ul ngbNav #CustomHover="ngbNav" [activeId]="2" class="nav nav-pills custom-hover-nav-tabs">
+                            <li [ngbNavItem]="1">
+                              <a class="p-4" ngbNavLink>
+                                 <i class="ri-barcode-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Indicator CODE</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Indicator CODE</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        EfFt040301
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                            <li [ngbNavItem]="2">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-file-text-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Brief Description</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Brief Description</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                      Trade value of exports and imports by  country
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                            <li [ngbNavItem]="3">
+                              <a class="p-4" ngbNavLink>
+                                <i class="bx bx-detail nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Indicator Detailed Definition</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Indicator Detailed Definition</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        It is the sum of the values of exports and imports between the Kingdom of Saudi Arabia and a country
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                            <li [ngbNavItem]="4">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-rfid-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Frequency</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Frequency</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        Annual
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+
+                            <li [ngbNavItem]="5">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-shapes-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Unit</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Unit</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        Million SAR
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+
+                            <li [ngbNavItem]="6">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-article-line nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">More Info</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">More Info</h6>
+                                <div class="table-responsive">
+                                    <p></p>
+                                </div>
+                              </ng-template>
+                            </li>
+
+
+                            <li [ngbNavItem]="7">
+                              <a class="p-4" ngbNavLink>
+                                <i class="ri-calendar-schedule-fill nav-icon nav-tab-position"></i>
+                                <h5 class="nav-titl nav-tab-position m-0">Last Update</h5>
+                              </a>
+                              <ng-template ngbNavContent>
+                                <h6 class="subb-title">Last Update</h6>
+                                <div class="table-responsive">
+                                    <p>
+                                        28/11/2022
+                                    </p>
+                                </div>
+                              </ng-template>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="card-body">
+                          <div class="tab-content text-muted">
+                            <div [ngbNavOutlet]="CustomHover"></div>
+                          </div>
+                      </div><!-- end card-body -->
+                    </div>
+                </ng-template>
+            </li>
+        </ul>
+        <div class="tab-content text-muted">
+            <div [ngbNavOutlet]="ModifierCustom"></div>
+        </div>
+    </div><!-- end card-body -->
+</div>
+

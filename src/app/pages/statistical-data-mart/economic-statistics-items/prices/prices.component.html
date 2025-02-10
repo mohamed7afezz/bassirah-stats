@@ -1,0 +1,30 @@
+<div class="row nav-pills-info flex-column">
+  <div class="col-lg-12 m-auto mb-4">
+    <div class="" role="tablist" aria-orientation="vertical">
+      <ul ngbNav #CustomVertical="ngbNav" [activeId]="5"
+        class="nav gap-4 third-level nav-pills flex-row nav-pills-tab custom-verti-nav-pills text-center">
+        <li [ngbNavItem]="1">
+            <a ngbNavLink class="nav-link  nav-link p-4 fw-bold fs-15 mb-3">
+                 Consumer Price Index
+            </a>
+            <ng-template ngbNavContent>
+               <app-consumer-price-index></app-consumer-price-index>
+            </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink class="nav-link nav-link p-4 fw-bold fs-15 mb-3">
+              Wholesale Price Index
+            </a>
+            <ng-template ngbNavContent>
+                <app-wholesale-price-index></app-wholesale-price-index>
+            </ng-template>
+        </li>
+      </ul>
+    </div>
+  </div> <!-- end col-->
+  <div class="col-lg-12">
+    <div class="tab-content text-muted mt-3 mt-lg-0">
+      <div [ngbNavOutlet]="CustomVertical"></div>
+    </div>
+  </div> <!-- end col-->
+</div> <!-- end row-->

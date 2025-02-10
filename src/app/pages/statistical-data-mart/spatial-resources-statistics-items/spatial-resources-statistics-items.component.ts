@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import {NgbNav, NgbNavContent, NgbNavItem, NgbNavLink, NgbNavLinkBase, NgbNavOutlet} from "@ng-bootstrap/ng-bootstrap";
-import {
-    TourismHajjAndUmrahStatisticsComponent
-} from "./tourism-hajj-and-umrah-statistics/tourism-hajj-and-umrah-statistics.component";
-import {EnvironmentStatisticsComponent} from "./environment-statistics/environment-statistics.component";
-import {AgricultureCensusComponent} from "./agriculture-census/agriculture-census.component";
+import {SDG3GoodHealthWellBeingComponent} from "./sdg3-good-health-well-being/sdg3-good-health-well-being.component";
+import {SDG4QualityEducationComponent} from "./sdg4-quality-education/sdg4-quality-education.component";
+import {SDG6CleanWaterSanitationComponent} from "./sdg6-clean-water-sanitation/sdg6-clean-water-sanitation.component";
 
 @Component({
   selector: 'app-spatial-resources-statistics-items',
@@ -16,9 +14,9 @@ import {AgricultureCensusComponent} from "./agriculture-census/agriculture-censu
         NgbNavLinkBase,
         NgbNavItem,
         NgbNavOutlet,
-        TourismHajjAndUmrahStatisticsComponent,
-        EnvironmentStatisticsComponent,
-        AgricultureCensusComponent
+        SDG3GoodHealthWellBeingComponent,
+        SDG4QualityEducationComponent,
+        SDG6CleanWaterSanitationComponent
     ],
   templateUrl: './spatial-resources-statistics-items.component.html',
   styleUrl: './spatial-resources-statistics-items.component.scss'

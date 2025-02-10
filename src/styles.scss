@@ -106,7 +106,7 @@
 /***************/
 .tabs-data-mart {
 	.custom-hover-nav-tabs .nav-item {
-		width: 50%;
+		flex-grow: 1;
 		.nav-link {
 			width: 100%;
 		}
@@ -132,14 +132,15 @@
         }
     }
     .nav.nav-pills.nav-customs.nav-danger > .nav-item > a {
-        padding: 12px 16px;
-        font-size: 15px !important;
+        padding: 1.5rem 1rem;
+        font-size: .95rem !important;
         width: 100%;
         display: flex;
         height: 100%;
         text-align: center;
         justify-content: center;
         align-items: center;
+        &:hover,
         &.active,
         &.active::before,
         &.active::after {
@@ -176,10 +177,11 @@
           display: none;
         }
         .nav-item {
-            flex: 0 0 25%;
+            flex-grow: 1;
             &> a {
               margin: 0;
             }
+
         }
     }
     .card.box-shadow-none {
@@ -193,6 +195,10 @@
     a {
         padding: 3rem 2rem;
         font-size: 1.5rem;
+         &:hover{
+            color: #FFF !important;
+            background-color:  var(--vz-primary);
+        }
         &::before {
             top: unset;
 	        bottom: -24px;
@@ -205,10 +211,15 @@
         }
     }
 }
+.third-level,
 .second-level {
     .nav-item {
-        flex: 0 0 calc(33.33% - 1rem);
+        flex-grow: 1;
         a{
+             &:hover{
+                color: #FFF !important;
+                background-color:  var(--vz-success) !important;
+            }
             &::before {
                 top: unset;
 	            bottom: -24px;
@@ -223,4 +234,26 @@
         }
 
     }
+}
+.third-level{
+    .nav-item {
+        a{
+            &:hover{
+                color: #FFF !important;
+                background-color:  var(--vz-info) !important;
+            }
+            &.active{
+                background-color:  var(--vz-info) !important;
+                &::before{
+                    border-top-color: var(--vz-info) !important;
+                }
+            }
+
+        }
+
+    }
+}
+.subb-title{
+    font-size: 1.5rem;
+    color: #1b8354;
 }
