@@ -5,14 +5,16 @@
         class="nav gap-4 third-level nav-pills flex-row nav-pills-tab custom-verti-nav-pills text-center">
         <li [ngbNavItem]="1">
             <a ngbNavLink class="nav-link  nav-link p-4 fw-bold fs-15 mb-3">
-                 Population Statistics
+              <i class="las la-users-cog d-block fs-20 mb-1"></i>
+              Population Statistics
             </a>
             <ng-template ngbNavContent>
-               <app-population-statistics></app-population-statistics>
+              <app-population-statistics></app-population-statistics>
             </ng-template>
-        </li>
-        <li [ngbNavItem]="2">
+          </li>
+          <li [ngbNavItem]="2">
             <a ngbNavLink class="nav-link nav-link p-4 fw-bold fs-15 mb-3">
+              <i class="las la-child d-block fs-20 mb-1"></i>
               Reproductive and Mother Health
             </a>
             <ng-template ngbNavContent>
@@ -21,6 +23,7 @@
         </li>
       <li [ngbNavItem]="3">
             <a ngbNavLink class="nav-link nav-link p-4 fw-bold fs-15 mb-3">
+              <i class="las la-heartbeat d-block fs-20 mb-1"></i>
               Life Expectancy at Birth
             </a>
             <ng-template ngbNavContent>
@@ -29,6 +32,7 @@
         </li>
        <li [ngbNavItem]="4">
             <a ngbNavLink class="nav-link nav-link p-4 fw-bold fs-15 mb-3">
+              <i class="las la-heart-broken d-block fs-20 mb-1"></i>
               Mortality
             </a>
             <ng-template ngbNavContent>
