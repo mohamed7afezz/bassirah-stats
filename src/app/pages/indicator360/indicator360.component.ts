@@ -79,17 +79,41 @@ export class Indicator360Component {
       {
         title: 'Tourism, Hajj and Umrah Statistics',
         link_url: 'indicator360/web-interactions-and-data-requests',
-        value: 28.50,
-        icon: 'la-plug',
-        persantage: '11.33',
+        value: 200000000,
+        icon: 'la-pray',
+        persantage: '25.55',
         profit: 'up'
       },
       {
-        title: ' Agriculture Census',
+        title: 'Agriculture Census',
         link_url: 'indicator360/web-interactions-and-data-requests',
-        value: 28.50,
-        icon: 'la-plug',
-        persantage: '11.33',
+        value: 5000000,
+        icon: 'la-campground',
+        persantage: '20',
+        profit: 'up'
+      },
+      {
+        title: 'Health Care Statistics',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 35.7,
+        icon: 'la-hospital',
+        persantage: '16.44',
+        profit: 'up'
+      },
+      {
+        title: 'Labor Market Statistics',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 55000000,
+        icon: 'la-cart-plus',
+        persantage: '25.55',
+        profit: 'up'
+      },
+      {
+        title: 'Short Term Business Statistics',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 10000000,
+        icon: 'la-business-time',
+        persantage: '27.9',
         profit: 'up'
       },
     ];
