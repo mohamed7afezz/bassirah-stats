@@ -42,6 +42,9 @@
       "ITEM": "Indicator & Data Documentation",
       "ITEM2": "User Logs"
     },
+    "ADMINISTRATION":{
+      "TEXT": "Administration (I-Admin)"
+    },
     "MENU": {
       "TEXT": "MENU"
     },

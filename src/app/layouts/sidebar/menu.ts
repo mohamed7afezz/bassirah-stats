@@ -134,5 +134,10 @@ export const MENU: MenuItem[] = [
       }
     ]
   },
-
+  {
+    id: 400,
+    label: 'MENUITEMS.ADMINISTRATION.TEXT',
+    icon: 'ri-admin-fill',
+    link: '/administration'
+  }
 ];

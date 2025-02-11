@@ -1,0 +1,487 @@
+<div class="row">
+  <div class="col-xxl-12">
+    <div class="row">
+      <div class="col-12 m-auto">
+        <div class="card">
+          <div class="card-body p-0">
+            <div class="row align-items-center">
+              <div class="d-flex justify-content-center align-items-center">
+                <h1 class="main-head text-center p-5 m-0">Administration Module (I Admin)</h1>
+              </div>
+              <p class="fs-5 p-5 text-center fs-20 pt-0 pb-4">The <strong>Administration Module (I Admin)</strong>
+                designed to provide comprehensive administration, security, and user management functionalities to
+                ensure seamless platform operations, compliance, and governance.</p>
+            </div>
+          </div> <!-- end card-body-->
+        </div>
+      </div> <!-- end col-->
+    </div> <!-- end row-->
+    <div class="row">
+      <div class="col-12 m-auto">
+
+        <div class="card">
+          <div class="card-body p-5">
+            <h2 class="mb-4">Objectives</h2>
+            <ul ngbNav #Arrow="ngbNav" [activeId]="1" class="nav nav-pills arrow-navtabs nav-success bg-light mb-3">
+              <li [ngbNavItem]="1">
+                <a ngbNavLink>
+                  <span class="d-block d-sm-none p-2 fw-bold"><i class="mdi mdi-home-variant"></i></span>
+                  <span class="d-sm-block p-2 fw-bold">Centralized Platform Administration</span>
+                </a>
+                <ng-template ngbNavContent>
+                  <div class="d-flex fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Provide a unified interface for managing platform-wide settings, configurations, and permissions.
+                    </div>
+                  </div>
+                  <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Ensure smooth operation of various platform modules by enabling system administrators to oversee
+                      and control
+                      critical components.
+                    </div>
+                  </div>
+                </ng-template>
+              </li>
+              <li [ngbNavItem]="2">
+                <a ngbNavLink>
+                  <span class="d-block d-sm-none p-2 fw-bold"><i class="mdi mdi-account"></i></span>
+                  <span class="d-sm-block p-2 fw-bold">User Management & Access Control</span>
+                </a>
+                <ng-template ngbNavContent>
+                  <div class="d-flex fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Offer granular user and role management to control access to various system functionalities.
+                    </div>
+                  </div>
+                  <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Support Single Sign-On (SSO) and integration with existing Identity and Access Management (IAM)
+                      systems.
+                    </div>
+                  </div>
+                </ng-template>
+              </li>
+              <li [ngbNavItem]="3">
+                <a ngbNavLink>
+                  <span class="d-block d-sm-none p-2 fw-bold"><i class="mdi mdi-email"></i></span>
+                  <span class="d-sm-block p-2 fw-bold">Security & Compliance Monitoring</span>
+                </a>
+                <ng-template ngbNavContent>
+                  <div class="d-flex fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Implement robust security controls to protect sensitive statistical data. </div>
+                  </div>
+                  <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Ensure compliance with organizational policies and regulatory requirements through audit logging
+                      and reporting.
+                    </div>
+                  </div>
+                </ng-template>
+              </li>
+              <li [ngbNavItem]="4">
+                <a ngbNavLink>
+                  <span class="d-block d-sm-none p-2 fw-bold"><i class="mdi mdi-email"></i></span>
+                  <span class="d-sm-block p-2 fw-bold">Performance Monitoring & System Health Checks</span>
+                </a>
+                <ng-template ngbNavContent>
+                  <div class="d-flex fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Provide real-time dashboards to monitor system performance, resource utilization, and error logs.
+                    </div>
+                  </div>
+                  <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                    <div class="flex-shrink-0">
+                      <i class="ri-checkbox-circle-line text-success"></i>
+                    </div>
+                    <div class="flex-grow-1 ms-2  fs-4 text-dark-emphasis">
+                      Ensure high availability and uptime by enabling proactive issue detection and resolution.
+                    </div>
+                  </div>
+                </ng-template>
+              </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content text-muted p-4 pt-2">
+              <div [ngbNavOutlet]="Arrow"></div>
+            </div>
+          </div><!-- end card-body -->
+        </div><!-- end card -->
+
+
+        <div class="card">
+          <div class="card-body p-5">
+            <h2 class="mb-3">Key Features</h2>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="" role="tablist" aria-orientation="vertical">
+                  <ul ngbNav #CustomVertical="ngbNav" [activeId]="1"
+                    class="nav nav-pills flex-column nav-pills-tab custom-verti-nav-pills text-center">
+                    <li [ngbNavItem]="1">
+                      <a ngbNavLink class="p-4">
+                        <i class="ri-user-line d-block fs-20 mb-1"></i>
+                        User & Role Management
+                      </a>
+                      <ng-template ngbNavContent>
+                        <!-- Nav tabs -->
+                        <ul ngbNav #Border="ngbNav" [activeId]="1"
+                          class="nav nav-tabs nav-border-top nav-border-top-primary mb-3">
+                          <li [ngbNavItem]="1">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Granular Access Control:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Define user roles and permissions with fine-grained control over module access and
+                                  actions.
+                                </div>
+                              </div>
+                              <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Implement Role-Based Access Control (RBAC) and Attribute-Based Access Control (ABAC)
+                                  for flexibility.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="2">
+                            <a ngbNavLink class="p-3 fs-5">
+                              User Authentication & Single Sign-On (SSO)
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Support integration with corporate authentication providers (e.g., Active Directory,
+                                  LDAP, OAuth, SAML).
+                                </div>
+                              </div>
+                              <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Enable two-factor authentication (2FA) for enhanced security.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="3">
+                            <a ngbNavLink class="p-3 fs-5">
+                              User Activity Tracking
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Log all user actions tprovide a complete audit trial for security and compliance
+                                  purposes.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                        </ul>
+                        <div class="tab-content text-muted p-3">
+                          <div [ngbNavOutlet]="Border"></div>
+                        </div>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="2">
+                      <a ngbNavLink class="p-4">
+                        <i class="ri-tools-line d-block fs-20 mb-1"></i>
+                        Platform Configuration & Management
+                      </a>
+                      <ng-template ngbNavContent>
+                        <ul ngbNav #Border="ngbNav" [activeId]="1"
+                          class="nav nav-tabs nav-border-top nav-border-top-primary mb-3">
+                          <li [ngbNavItem]="1">
+                            <a ngbNavLink class="p-3 fs-5">
+                              System-Wide Settings Control:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Manage global configurations for all platform modules, including data access policies,
+                                  approval workflows, and notification settings.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="2">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Integration Management:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Configure API endpoints and connectors for seamless integration with data sources, BI
+                                  tools, and other enterprise systems.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="3">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Scheduled Jobs & Automation:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Manage scheduled data refreshes, automated report generation, and workflow executions.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                        </ul>
+                        <div class="tab-content text-muted p-3">
+                          <div [ngbNavOutlet]="Border"></div>
+                        </div>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="3">
+                      <a ngbNavLink class="p-4">
+                        <i class="ri-shield-line d-block fs-20 mb-1"></i>
+                        Security & Compliance
+                      </a>
+                      <ng-template ngbNavContent>
+                        <ul ngbNav #Border="ngbNav" [activeId]="1"
+                          class="nav nav-tabs nav-border-top nav-border-top-primary mb-3">
+                          <li [ngbNavItem]="1">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Data Access Auditing & Logging:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Track and log all access to sensitive data, ensuring transparency and accountability.
+                                </div>
+                              </div>
+                              <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Generate audit reports for internal reviews and external compliance checks.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="2">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Encryption & Secure Data Handling:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Enforce encryption standards for data at rest and in transit.
+                                </div>
+                              </div>
+                              <div class="d-flex mt-2 fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Define security policies for user access, password management, and session controls.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="3">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Compliance Monitoring & Reporting:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Ensure adherence to local and international data governance regulations (e.g., ISO
+                                  27001, GDPR, Saudi Data Management Regulations).
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                        </ul>
+                        <div class="tab-content text-muted p-3">
+                          <div [ngbNavOutlet]="Border"></div>
+                        </div>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="4">
+                      <a ngbNavLink class="p-4">
+                        <i class="ri-ubuntu-line d-block fs-20 mb-1"></i>
+                        System Performance & Monitoring
+                      </a>
+                      <ng-template ngbNavContent>
+                        <ul ngbNav #Border="ngbNav" [activeId]="1"
+                          class="nav nav-tabs nav-border-top nav-border-top-primary mb-3">
+                          <li [ngbNavItem]="1">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Real-Time Health Dashboards:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Monitor server health, resource utilization, database performance, and application
+                                  logs.
+                                </div>
+                              </div>
+
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="2">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Error Logging & Alerting:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Detect system failures, errors, and security threats, and trigger automatic alerts to
+                                  administrators.
+                                </div>
+                              </div>
+
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="3">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Scalability & High Availability Support:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Ensure the platform can handle high workloads by monitoring performance bottlenecks
+                                  and optimizing system resources.
+                                </div>
+                              </div>
+                            </ng-template>
+                          </li>
+                        </ul>
+                        <div class="tab-content text-muted p-3">
+                          <div [ngbNavOutlet]="Border"></div>
+                        </div>
+                      </ng-template>
+                    </li>
+                    <li [ngbNavItem]="5">
+                      <a ngbNavLink class="p-4">
+                        <i class="ri-notification-3-line d-block fs-20 mb-1"></i>
+                        Notification & Workflow Management
+                      </a>
+                      <ng-template ngbNavContent>
+                        <ul ngbNav #Border="ngbNav" [activeId]="1"
+                          class="nav nav-tabs nav-border-top nav-border-top-primary mb-3">
+                          <li [ngbNavItem]="1">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Admin Notifications & Alerts:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Configure notifications for system updates, security incidents, and scheduled
+                                  maintenance activities.
+                                </div>
+                              </div>
+
+                            </ng-template>
+                          </li>
+                          <li [ngbNavItem]="2">
+                            <a ngbNavLink class="p-3 fs-5">
+                              Approval Workflow Configuration:
+                            </a>
+                            <ng-template ngbNavContent>
+                              <div class="d-flex fs-4 text-dark-emphasis">
+                                <div class="flex-shrink-0">
+                                  <i class="ri-checkbox-circle-line text-primary"></i>
+                                </div>
+                                <div class="flex-grow-1 ms-2">
+                                  Define and modify approval processes for user requests, data access, and publication
+                                  workflows.
+                                </div>
+                              </div>
+
+                            </ng-template>
+                          </li>
+                        </ul>
+                        <div class="tab-content text-muted p-3">
+                          <div [ngbNavOutlet]="Border"></div>
+                        </div>
+                      </ng-template>
+                    </li>
+                  </ul>
+                </div>
+              </div> <!-- end col-->
+              <div class="col-lg-9">
+                <div class="tab-content text-muted mt-3 mt-lg-0">
+                  <div [ngbNavOutlet]="CustomVertical"></div>
+                </div>
+              </div> <!-- end col-->
+            </div> <!-- end row-->
+          </div><!-- end card-body -->
+        </div><!--end card-->
+
+
+      </div>
+    </div>
+  </div>
+</div>

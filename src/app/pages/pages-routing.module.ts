@@ -26,9 +26,14 @@ import { DashboardsStatisticsComponent } from './process-management/Statistics/d
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 
+import { AdministrationComponent  } from "./administration/administration.component";
+
 const routes: Routes = [
     {
       path: 'indicator360', component: Indicator360Component 
+    },
+    {
+      path: 'indicator360/gross-domestic-product', component: GrossDomesticProductComponent
     },
     {
       path: 'process_management', component: ProcessManagementComponent 
@@ -64,10 +69,10 @@ const routes: Routes = [
       path: 'workflow/create-workflow', component: CreateWorkflowComponent
     },
     {
-      path: 'data_wrangling', component: DataWranglingComponent 
+      path: 'data_wrangling', component: DataWranglingComponent
     },
     {
-      path: 'indicator360/gross-domestic-product', component: GrossDomesticProductComponent
+      path: 'administration', component: AdministrationComponent
     },
     {
         path: "",
