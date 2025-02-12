@@ -27,10 +27,14 @@ import { DashboardsStatisticsComponent } from './process-management/Statistics/d
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 
 import { AdministrationComponent  } from "./administration/administration.component";
+import { WorkFlowComponent } from './work-flow/work-flow.component';
 
 const routes: Routes = [
     {
       path: 'indicator360', component: Indicator360Component 
+    },
+    {
+      path: 'work-flow', component: WorkFlowComponent 
     },
     {
       path: 'indicator360/gross-domestic-product', component: GrossDomesticProductComponent
