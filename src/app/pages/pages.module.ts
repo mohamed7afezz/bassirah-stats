@@ -47,6 +47,7 @@ import { EconomicStatisticsComponent } from './process-management/Statistics/eco
 import { DashboardsStatisticsComponent } from './process-management/Statistics/dashboards-statistics/dashboards-statistics.component';
 import { AdministrationComponent  } from "./administration/administration.component";
 
+
 @NgModule({
   declarations: [
     DashboardComponent,

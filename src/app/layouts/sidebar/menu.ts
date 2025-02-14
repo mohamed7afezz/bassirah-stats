@@ -140,4 +140,6 @@ export const MENU: MenuItem[] = [
     icon: 'ri-admin-fill',
     link: '/administration'
   }
+
+
 ];
