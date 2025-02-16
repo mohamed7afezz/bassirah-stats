@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { WorkflowDesignerModule } from '@optimajet/workflow-designer-angular';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-work-flow',
@@ -22,6 +23,14 @@ export class WorkFlowComponent {
     language: 'en',
     // customLocalization: [el]
   };
+
+  url: string = "https://demo.workflowserver.io/?apanel=workflow&aid=BPMN2";
+  // Sanitize the URL
+  safeUrl: SafeResourceUrl;
+
+  constructor(private sanitizer: DomSanitizer) {
+    this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
+  }
 
   // Handle workflow changes
   onWorkflowChange(event: any) {
