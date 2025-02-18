@@ -492,17 +492,17 @@ export class DashboardComponent implements OnInit {
       {
         title: 'Electricity In Household',
         link_url: 'indicator360/web-interactions-and-data-requests',
-        value: 28.50,
+        value: 58,
       },
       {
         title: 'Tourism, Hajj and Umrah Statistics',
         link_url: 'indicator360/web-interactions-and-data-requests',
-        value: 28.50,
+        value: 74,
       },
       {
         title: ' Agriculture Census',
         link_url: 'indicator360/web-interactions-and-data-requests',
-        value: 28.50,
+        value: 62,
       },
         {
         title: 'Index of  imports quantity',
