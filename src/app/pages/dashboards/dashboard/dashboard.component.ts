@@ -155,62 +155,62 @@ export class DashboardComponent implements OnInit {
   setrevenuevalue(value: any) {
     if (value == 'all') {
       this.analyticsChart.series = [{
-        name: 'Orders',
+        name: 'Web Interactions',
         type: 'area',
-        data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67]
+        data: [613, 1275, 616, 1420, 1066, 1410, 813, 1450, 972, 797, 1269, 1329]
       }, {
-        name: 'Earnings',
+        name: 'Number of Publications',
         type: 'bar',
-        data: [89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57, 42.36, 88.51, 36.57]
+        data: [5, 19, 20, 11, 18, 14, 24, 12, 6, 5, 15, 22]
       }, {
-        name: 'Refunds',
+        name: 'Data Requests',
         type: 'line',
-        data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35]
+        data: [187, 145, 190, 154, 45, 79, 47, 145, 90, 134, 166, 48]
       }]
     }
     if (value == '1M') {
       this.analyticsChart.series = [{
-        name: 'Orders',
+        name: 'Web Interactions',
         type: 'area',
-        data: [24, 75, 16, 98, 19, 41, 52, 34, 28, 52, 63, 67]
+        data: [390, 380, 688, 538, 317, 448, 349, 597, 307, 213, 340, 401]
       }, {
-        name: 'Earnings',
+        name: 'Number of Publications',
         type: 'bar',
-        data: [99.25, 28.58, 98.74, 12.87, 107.54, 94.03, 11.24, 48.57, 22.57, 42.36, 88.51, 36.57]
+        data: [19, 13, 15, 7, 13, 18, 21, 11, 12, 23, 12, 23]
       }, {
-        name: 'Refunds',
+        name: 'Data Requests',
         type: 'line',
-        data: [28, 22, 17, 27, 21, 11, 5, 9, 17, 29, 12, 15]
+        data: [76, 155, 182, 116, 87, 83, 61, 151, 31, 69, 110, 166]
       }]
     }
     if (value == '6M') {
       this.analyticsChart.series = [{
-        name: 'Orders',
+        name: 'Web Interactions',
         type: 'area',
-        data: [34, 75, 66, 78, 29, 41, 32, 44, 58, 52, 43, 77]
+        data: [849, 1031, 1455, 1115, 1213, 758, 1205, 1229, 1015, 877, 1020, 621]
       }, {
-        name: 'Earnings',
+        name: 'Number of Publications',
         type: 'bar',
-        data: [109.25, 48.58, 38.74, 57.87, 77.54, 84.03, 31.24, 18.57, 92.57, 42.36, 48.51, 56.57]
+        data: [9, 10, 14, 19, 12, 15, 8, 19, 24, 15, 9, 5]
       }, {
-        name: 'Refunds',
+        name: 'Data Requests',
         type: 'line',
-        data: [12, 22, 17, 27, 1, 51, 5, 9, 7, 29, 12, 35]
+        data: [103, 87, 174, 190, 163, 106, 114, 64, 37, 55, 187, 126]
       }]
     }
     if (value == '1Y') {
       this.analyticsChart.series = [{
-        name: 'Orders',
+        name: 'Web Interactions',
         type: 'area',
-        data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67]
+        data: [781, 742, 1412, 967, 1084, 1411, 673, 1248, 1233, 1170, 1026, 820]
       }, {
-        name: 'Earnings',
+        name: 'Number of Publications',
         type: 'bar',
-        data: [89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57, 42.36, 88.51, 36.57]
+        data: [46, 41, 34, 40, 27, 26, 6, 16, 45, 17, 42, 46]
       }, {
-        name: 'Refunds',
+        name: 'Data Requests',
         type: 'line',
-        data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35]
+        data: [51, 144, 105, 180, 79, 54, 158, 78, 66, 54, 60, 32]
       }]
     }
 
@@ -236,23 +236,22 @@ export class DashboardComponent implements OnInit {
       },
       colors: colors,
       series: [{
-        name: 'Orders',
+        name: 'Web Interactions',
         type: 'area',
-        data: [34, 65, 46, 68, 49, 61, 42, 44, 78, 52, 63, 67]
+        data: [1441, 1151, 1333, 1440, 1422, 1117, 1258, 645, 1201, 682, 1290, 1176]
       }, {
-        name: 'Earnings',
+        name: 'Number of Publications',
         type: 'bar',
-        data: [89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57, 42.36,
-          88.51, 36.57]
+        data: [40, 29, 21, 18, 39, 30, 28, 33, 38, 30, 36, 20]
       }, {
-        name: 'Refunds',
+        name: 'Data Requests',
         type: 'line',
-        data: [8, 12, 7, 17, 21, 11, 5, 9, 7, 29, 12, 35]
+        data: [52, 163, 166, 163, 56, 153, 33, 37, 101, 172, 112, 184]
       }],
       fill: {
         opacity: [0.1, 0.9, 1],
       },
-      labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003', '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'],
+      labels: ['01/01/2024', '02/01/2024', '03/01/2024', '04/01/2024', '05/01/2024', '06/01/2024', '07/01/2024', '08/01/2024', '09/01/2024', '10/01/2024', '11/01/2024'],
       markers: {
         size: [0, 0, 0],
         strokeWidth: 2,
@@ -345,7 +344,7 @@ export class DashboardComponent implements OnInit {
     colors = this.getChartColorsArray(colors);
     this.SalesCategoryChart = {
       series: [44, 55, 41, 17, 15],
-      labels: ["Direct", "Social", "Email", "Other", "Referrals"],
+      labels: ["Ministry of Economy and Planning", "Ministry of Commerce", "Ministry of Culture", "Ministry of Finance", "Ministry of Hajj and Umrah"],
       chart: {
         height: 333,
         type: "donut",
@@ -382,7 +381,53 @@ export class DashboardComponent implements OnInit {
   private fetchData() {
     this.BestSelling = BestSelling;
     this.TopSelling = TopSelling;
-    this.Recentelling = Recentelling;
+    this.Recentelling =  [
+      {
+          id: "#VZ2112",
+          image: "assets/images/users/avatar-1.jpg",
+          statistician: 'Khalid Mohammed',
+          workflow: 'Add Tables',
+          date: '2/01/2025',
+          department: 'Economic Statistics Department',
+          status: 'Pending Approval'
+      },
+      {
+          id: "#VZ2111",
+          image: "assets/images/users/avatar-2.jpg",
+          statistician: 'Hkim Mohammed',
+          workflow: 'Add Dashboard',
+          date: '2/18/2025',
+          department: 'Social Statistics department',
+          status: 'Approved'
+      },
+      {
+          id: "#VZ2109",
+          image: "assets/images/users/avatar-3.jpg",
+          statistician: 'Ziaad El Mahmoudy',
+          workflow: 'Add API',
+          date: '1/05/2025',
+          department: 'Spatial and Resources Statistics department',
+          status: 'Rejected for Review'
+      },    
+      {
+          id: "#VZ2108",
+          image: "assets/images/users/avatar-4.jpg",
+          statistician: 'Abdallah Dahshan',
+          workflow: 'Add Dashboard',
+          date: '2/08/2025',
+          department: 'Social Statistics department',
+          status: 'Approved'
+      },   
+      {
+          id: "#VZ2107",
+          image: "assets/images/users/avatar-6.jpg",
+          statistician: 'Fahed ben Ibarahim',
+          workflow: 'Add API',
+          date: '12/18/2024',
+          department: 'Economic Statistics Department',
+          status: 'Pending Approval'
+      } 
+  ];
     // this.statData = statData;
 
     this.TopHistoricalPublication = [
@@ -544,7 +589,7 @@ export class DashboardComponent implements OnInit {
         id: "mapbox/light-v9",
         tileSize: 400,
         zoomOffset: 0,
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        attribution: '',
       })
     ],
     zoom: 2.5,
