@@ -39,13 +39,13 @@ export class LoginComponent implements OnInit {
     private store: Store) {
       // redirect to home if already logged in
       if (this.authenticationService.currentUserValue) {
-        this.router.navigate(['/indicator360']);
+        this.router.navigate(['/']);
       }
      }
 
   ngOnInit(): void {
     if(sessionStorage.getItem('currentUser')) {
-      this.router.navigate(['/indicator360']);
+      this.router.navigate(['/']);
     }
     /**
      * Form Validatyion

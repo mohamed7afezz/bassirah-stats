@@ -18,6 +18,10 @@ import { SalesCategoryChart, revenueChart } from 'src/app/shared/chartColor';
  */
 export class DashboardComponent implements OnInit {
 
+  // Recent Active logs
+  activityItems: { activity: string, icon: string, classes: string, date: string }[] = []; // Array to store activity items with updated dates
+  TopHistoricalPublication!: any;
+  MainAuthors!: any;
   // bread crumb items
   breadCrumbItems!: Array<{}>;
   analyticsChart!: ChartType;
@@ -26,6 +30,7 @@ export class DashboardComponent implements OnInit {
   Recentelling: any;
   SalesCategoryChart!: ChartType;
   statData!: any;
+  TopIndicators: any;
   currentDate: any;
   themeColorMap: any;
   // Current Date
@@ -36,7 +41,37 @@ export class DashboardComponent implements OnInit {
     var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
     var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
     this.currentDate = { from: firstDay, to: lastDay }
+
+    // Initialize activity items with placeholder dates
+    this.activityItems = [
+      { activity: 'Log In', icon: "ri-login-box-line", classes: "bg-success-subtle text-success", date: '02:14 PM Today' },
+      { activity: 'Checking Messages', icon: "ri-stack-fill", classes: "bg-danger-subtle text-danger", date: '9:47 PM Yesterday' },
+      { activity: 'Browsing Data Mart "GDP Indicator"', icon: "ri-global-line", classes: "bg-dark-subtle text-dark ", date: '9:47 PM Yesterday' },
+      { activity: 'Connecting to Staging Database', icon: "ri-database-2-line", classes: "bg-info-subtle text-info ", date: '25 Nov, 2021' },
+      { activity: 'Executing Query#3521 on tables "Consumption" & "Prices"', icon: "mdi mdi-sale fs-14", classes: "bg-secondary", date: '22 Oct, 2021' },
+      { activity: 'Creating Data Model "Consumption"', icon: "ri-line-chart-line", classes: "bg-warning-subtle text-warning", date: '15 Oct' },
+      { activity: 'Commenting on "Add API" Workflow Case#325', icon: "ri-links-fill", classes: "text-white bg-primary ", date: '22 Oct, 2021' },
+      { activity: 'Publishing Dashboard "Price Index"',  icon: "ri-article-line", classes: "bg-warning ", date: '22 Oct, 2021' },
+      { activity: 'Adding Indicator "Life Expectancy at Birth" to Watch List', icon: "ri-image-add-line", classes: "bg-success-subtle text-success", date: '22 Oct, 2021' }
+    ];
+
+     // Ensure Login is 12 hours after LogsFrom
+    const logsFrom = new Date();
+    const loginDate = new Date(logsFrom.getTime() - 24 * 60 * 60 * 1000);
+    const logsTo = new Date();
+    const logoutDate = new Date();
+
+    this.activityItems = this.activityItems.map((item, index) => {
+      if (index === 0) {
+        return { ...item, date: this.formatDate(loginDate) };
+      } else if (index === this.activityItems.length - 1) {
+        return { ...item, date: this.formatDate(logoutDate) };
+      } else {
+        return { ...item, date: this.getRandomDate(loginDate, logoutDate) };
+      }
+    });
   }
+
 
   ngOnInit(): void {
     /**
@@ -62,6 +97,22 @@ export class DashboardComponent implements OnInit {
     this._SalesCategoryChart('["--vz-primary", "--vz-success", "--vz-warning", "--vz-danger", "--vz-info"]');
   }
 
+  formatDate(date: Date): string {
+    return date.toLocaleString('en-US', {
+      hour: '2-digit',
+      minute: '2-digit',
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric'
+    });
+  }
+
+   // Method to generate a random date between two dates
+  getRandomDate(start: Date, end: Date): string {
+    const randomTimestamp = start.getTime() + Math.random() * (end.getTime() - start.getTime());
+    const randomDate = new Date(randomTimestamp);
+    return this.formatDate(randomDate);
+  }
 
   num: number = 0;
   option = {
@@ -70,6 +121,8 @@ export class DashboardComponent implements OnInit {
     duration: 2,
     decimalPlaces: 2,
   };
+
+
 
   // Chart Colors Set
   private getChartColorsArray(colors: any) {
@@ -330,7 +383,156 @@ export class DashboardComponent implements OnInit {
     this.BestSelling = BestSelling;
     this.TopSelling = TopSelling;
     this.Recentelling = Recentelling;
-    this.statData = statData;
+    // this.statData = statData;
+
+    this.TopHistoricalPublication = [
+      {
+          PDFName: "GDP and National Accounts Third Quarter of 2024 ",
+          PDFURL: "https://www.stats.gov.sa/documents/20117/2066979/GDP+Q3+2024E.pdf/ba18c364-5b40-4a44-008e-eefa3afb47ac?t=1735210804090",
+          year: '2024',
+          quarter: 'Third (3)',
+      },
+      {
+          PDFName: "GDP and National Accounts Second Quarter of 2024",
+          PDFURL: "https://www.stats.gov.sa/documents/20117/2066979/GDP+Q2+2024E_V3.pdf/381e5bde-c938-2348-7e3c-45e4c717e340?t=1735209598077",
+          year: '2024',
+          quarter: 'Second (2)',
+      },
+      {
+          PDFName: "GDP and National Accounts First Quarter of 2024",
+          PDFURL: "https://www.stats.gov.sa/documents/20117/2066979/GDP+Q1+2024E_0.pdf/0049703b-72cf-7d71-c16e-df666e95a21b?t=1735209658624",
+          year: '2024',
+          quarter: 'First (1)',
+      },
+      {
+          PDFName: "GDP and National Accounts Fourth Quarter of 2023",
+          PDFURL: "https://www.stats.gov.sa/documents/20117/2066979/GDP+FQ42023E_0.pdf/145eeef3-ea98-4826-5ad8-7a882d486564?t=1735209534471",
+          year: '2023',
+          quarter: 'Fourth (4)',
+      },
+      {
+          PDFName: "Annual National Accounts Publication 2022",
+          PDFURL: "https://www.stats.gov.sa/documents/20117/2066979/Annual+National+Accounts+Publication+2022+EN.pdf/bafd06e4-1379-7f8e-0765-d3ef1c0947df?t=1735155306054",
+          year: '2022',
+          quarter: 'Fourth (4)',
+      }
+    ];
+    this.TopIndicators = [
+      {
+        title: 'Gross Domestic Product',
+        link_url: 'gross-domestic-product',
+        value: 1700000,
+      }, {
+        title: 'ICT Employment Rate',
+        link_url: 'indicator360/trend-analysis',
+        value: 12,
+      }, {
+        title: 'Total Exports',
+        link_url: 'indicator360/top-historical-publications',
+        value: 1200000,
+      }, {
+        title: 'Total Imports',
+        link_url: 'indicator360/main-authors',
+        value: 2300000,
+      },
+      {
+        title: 'Consumer Price Index',
+        link_url: 'indicator360/relation-to-indicators-and-predictors',
+        value: 112.28,
+      }, {
+        title: 'Life Expectancy at Birth',
+        link_url: 'indicator360/relation-to-indicators-and-predictors',
+        value: 78.5,
+      },
+      {
+        title: 'Electricity In Household',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+      },
+      {
+        title: 'Tourism, Hajj and Umrah Statistics',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+      },
+      {
+        title: ' Agriculture Census',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+      },
+        {
+        title: 'Index of  imports quantity',
+        link_url: 'indicator360/web-interactions-and-data-requests',
+        value: 28.50,
+      },
+    ];
+    this.statData = [
+      {
+        title: 'Gross Domestic Product (GDP)',
+        link_url: 'gross-domestic-product',
+        value: 1700000,
+        icon: 'la-hand-holding-usd',
+        persantage: '6.25',
+        profit: 'up'
+      }, {
+        title: 'ICT Employment Rate',
+        link_url: 'indicator360/trend-analysis',
+        value: 12,
+        icon: 'la-chalkboard-teacher',
+        persantage: '4.35',
+        profit: 'up'
+      }, {
+        title: 'Total Exports',
+        link_url: 'indicator360/top-historical-publications',
+        value: 1200000,
+        icon: 'la-ship',
+        persantage: '4.35',
+        profit: 'up'
+      }, {
+        title: 'Total Imports',
+        link_url: 'indicator360/main-authors',
+        value: 2300000,
+        icon: 'la-boxes',
+        persantage: '2.22',
+        profit: 'up'
+      }
+    ];
+    this. MainAuthors = [
+      {
+          name: "Mohammed bin Mohammed",
+          date: 'Sep 20, 2024',
+          profile: 'assets/images/users/avatar-1.jpg',
+          publications: "140",
+          percentage: "15%"
+      },
+      {
+          name: "Bandar Mohammed",
+          date: 'Sep 23, 2024',
+          profile: 'assets/images/users/avatar-2.jpg',
+          publications: "350",
+          percentage: "35%"
+      },
+      {
+          name: "Abdullah Mohammed",
+          date: 'Sep 27, 2024',
+          profile: 'assets/images/users/avatar-3.jpg',
+          publications: "87",
+          percentage: "12%"
+      },
+      {
+          name: "Mohammed Rashid",
+          date: 'Sep 30, 2024',
+          profile: 'assets/images/users/avatar-4.jpg',
+          publications: "153",
+          percentage: "17%"
+      },
+      {
+          name: "Rashid Ibrahim",
+          date: 'Sep 30, 2024',
+          profile: 'assets/images/users/avatar-6.jpg',
+          publications: "250",
+          percentage: "22%"
+      }
+    ];
   }
 
   /**
@@ -340,18 +542,18 @@ export class DashboardComponent implements OnInit {
     layers: [
       tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoidGhlbWVzYnJhbmQiLCJhIjoiY2xmbmc3bTV4MGw1ejNzbnJqOWpubzhnciJ9.DNkdZVKLnQ6I9NOz7EED-w", {
         id: "mapbox/light-v9",
-        tileSize: 512,
+        tileSize: 400,
         zoomOffset: 0,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       })
     ],
-    zoom: 1.1,
-    center: latLng(28, 1.5)
+    zoom: 2.5,
+    center: latLng(-52, 180)
   };
   layers = [
-    circle([41.9, 12.45], { color: "#435fe3", opacity: 0.5, weight: 10, fillColor: "#435fe3", fillOpacity: 1, radius: 400000, }),
-    circle([12.05, -61.75], { color: "#435fe3", opacity: 0.5, weight: 10, fillColor: "#435fe3", fillOpacity: 1, radius: 400000, }),
-    circle([1.3, 103.8], { color: "#435fe3", opacity: 0.5, weight: 10, fillColor: "#435fe3", fillOpacity: 1, radius: 400000, }),
+    circle([-52.5, 174.2], { color: "#1b83546b", opacity: 0.5, weight: 10, fillColor: "#1b83546b", fillOpacity: 1, radius: 40000, }),
+    circle([-50.3, 179.5], { color: "#1b83546b", opacity: 0.5, weight: 10, fillColor: "#1b83546b", fillOpacity: 1, radius: 40000, }),
+    circle([-55.5, 162.5], { color: "#1b83546b", opacity: 0.5, weight: 10, fillColor: "#1b83546b", fillOpacity: 1, radius: 40000, }),
   ];
 
   /**
