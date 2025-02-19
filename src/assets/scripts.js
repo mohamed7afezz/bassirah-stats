@@ -49,13 +49,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     submitButton.removeAttribute("disabled");
     submitButton.disabled = false;
 
-    setTimeout(() => {
+    setTimeout(() => {      
       submitButton.click();
+      
 
       // Show body after submission
       setTimeout(() => {
         document.body.style.display = "";
       }, 500);
+      setTimeout(() => {
+        document.querySelector("button[data-testid='viz-type-button']").click();
+      }, 3500);
     }, 500);
   } catch (error) {
     console.error("Unexpected error:", error);
