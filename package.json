@@ -41,6 +41,7 @@
     "@ngx-translate/core": "^15.0.0",
     "@ngx-translate/http-loader": "^8.0.0",
     "@nicky-lenaers/ngx-scroll-to": "^14.0.0",
+    "@optimajet/workflow-designer-angular": "^16.3.0",
     "@popperjs/core": "^2.11.8",
     "@types/google.maps": "^3.55.10",
     "@types/jasmine": "^5.1.4",

@@ -45,6 +45,9 @@
     "ADMINISTRATION":{
       "TEXT": "Administration (I-Admin)"
     },
+    "WORKFLOW_MANAGEMENT":{
+      "TEXT": "Workflow Management (I-Plan)"
+    },
     "MENU": {
       "TEXT": "MENU"
     },
