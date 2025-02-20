@@ -336,7 +336,7 @@
                                             </td>
                                             <td>{{data.department}}</td>
                                             <td>
-                                                <span class="badge bg-success-subtle text-success" [ngClass]=" { 'bg-warning-subtle text-warning': data.status === 'Pending', 'bg-danger-subtle text-danger': data.status === 'Unpaid'}">{{data.status}}</span>
+                                                <span class="badge bg-success-subtle text-success" [ngClass]=" { 'bg-warning-subtle text-warning': data.status === 'Pending Approval', 'bg-danger-subtle text-danger': data.status === 'Rejected for Review'}">{{data.status}}</span>
                                             </td>
                                         </tr><!-- end tr -->
                                         }

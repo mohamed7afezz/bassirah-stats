@@ -155,62 +155,62 @@ export class DashboardComponent implements OnInit {
   setrevenuevalue(value: any) {
     if (value == 'all') {
       this.analyticsChart.series = [{
-        name: 'Number of Publications',
+        name: 'Data Requests',
         type: 'area',
-        data: [5, 19, 20, 11, 18, 14, 24, 12, 6, 5, 15, 22]
+        data: [187, 145, 190, 154, 45, 79, 47, 145, 90, 134, 166, 48]
       }, {
         name: 'Web Interactions',
         type: 'bar',
         data: [613, 1275, 616, 1420, 1066, 1410, 813, 1450, 972, 797, 1269, 1329]
       }, {
-        name: 'Data Requests',
+        name: 'Number of Publications',
         type: 'line',
-        data: [187, 145, 190, 154, 45, 79, 47, 145, 90, 134, 166, 48]
+        data: [5, 19, 20, 11, 18, 14, 24, 12, 6, 5, 15, 22]
       }]
     }
     if (value == '1M') {
       this.analyticsChart.series = [{
-        name: 'Number of Publications',
+        name: 'Data Requests',
         type: 'area',
-        data: [19, 13, 15, 7, 13, 18, 21, 11, 12, 23, 12, 23]
+        data: [76, 155, 182, 116, 87, 83, 61, 151, 31, 69, 110, 166]
       }, {
         name: 'Web Interactions',
         type: 'bar',
         data: [390, 380, 688, 538, 317, 448, 349, 597, 307, 213, 340, 401]
       }, {
-        name: 'Data Requests',
+        name: 'Number of Publications',
         type: 'line',
-        data: [76, 155, 182, 116, 87, 83, 61, 151, 31, 69, 110, 166]
+        data: [19, 13, 15, 7, 13, 18, 21, 11, 12, 23, 12, 23]
       }]
     }
     if (value == '6M') {
       this.analyticsChart.series = [{
-        name: 'Number of Publications',
+        name: 'Data Requests',
         type: 'area',
-        data: [9, 10, 14, 19, 12, 15, 8, 19, 24, 15, 9, 5]
+        data: [103, 87, 174, 190, 163, 106, 114, 64, 37, 55, 187, 126]
       }, {
         name: 'Web Interactions',
         type: 'bar',
         data: [849, 1031, 1455, 1115, 1213, 758, 1205, 1229, 1015, 877, 1020, 621]
       }, {
-        name: 'Data Requests',
+        name: 'Number of Publications',
         type: 'line',
-        data: [103, 87, 174, 190, 163, 106, 114, 64, 37, 55, 187, 126]
+        data: [9, 10, 14, 19, 12, 15, 8, 19, 24, 15, 9, 5]
       }]
     }
     if (value == '1Y') {
       this.analyticsChart.series = [{
-        name: 'Number of Publications',
+        name: 'Data Requests',
         type: 'area',
-        data: [46, 41, 34, 40, 27, 26, 6, 16, 45, 17, 42, 46]
+        data: [51, 144, 105, 180, 79, 54, 158, 78, 66, 54, 60, 32]
       }, {
         name: 'Web Interactions',
         type: 'bar',
         data: [781, 742, 1412, 967, 1084, 1411, 673, 1248, 1233, 1170, 1026, 820]
       }, {
-        name: 'Data Requests',
+        name: 'Number of Publications',
         type: 'line',
-        data: [51, 144, 105, 180, 79, 54, 158, 78, 66, 54, 60, 32]
+        data: [46, 41, 34, 40, 27, 26, 6, 16, 45, 17, 42, 46]
       }]
     }
 
@@ -236,17 +236,17 @@ export class DashboardComponent implements OnInit {
       },
       colors: colors,
       series: [{
-        name: 'Number of Publications',
+        name: 'Data Requests',
         type: 'area',
-        data: [40, 29, 21, 18, 39, 30, 28, 33, 38, 30, 36, 20]
+        data: [52, 163, 166, 163, 56, 153, 33, 37, 101, 172, 112, 184]
       }, {
         name: 'Web Interactions',
         type: 'bar',
         data: [1441, 1151, 1333, 1440, 1422, 1117, 1258, 645, 1201, 682, 1290, 1176]
       }, {
-        name: 'Data Requests',
+        name: 'Number of Publications',
         type: 'line',
-        data: [52, 163, 166, 163, 56, 153, 33, 37, 101, 172, 112, 184]
+        data: [40, 29, 21, 18, 39, 30, 28, 33, 38, 30, 36, 20]
       }],
       fill: {
         opacity: [0.1, 0.9, 1],
