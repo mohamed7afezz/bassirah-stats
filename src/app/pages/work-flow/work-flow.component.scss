@@ -1,0 +1,10 @@
+iframe {
+    border: none;
+    /* Remove border */
+    margin: 0 auto;
+    /* Center the iframe */
+    display: block;
+
+    height: 100vh;
+    /* Ensure it behaves as a block element */
+}

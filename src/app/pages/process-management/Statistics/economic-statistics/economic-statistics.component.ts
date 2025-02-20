@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
-import {RouterLink, RouterOutlet} from "@angular/router";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { Router, RouterLink, RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-economic-statistics',
@@ -18,17 +18,21 @@ export class EconomicStatisticsComponent implements OnInit {
     // Add initialization logic here if needed
   }
 
-  constructor(private modalService: NgbModal) { }
-  imagename : any;
+  constructor(private modalService: NgbModal, private _router: Router) { }
+  imagename: any;
   PageURL: any;
-    /**
-   * Open Success modal
-   * @param successModal Success modal data
-   */
-  successModal(successDataModal: any, PageURL:any, imagename: any  ) {
+  /**
+ * Open Success modal
+ * @param successModal Success modal data
+ */
+  successModal(successDataModal: any, PageURL: any, imagename: any) {
     this.modalService.open(successDataModal, { centered: true });
     this.PageURL = PageURL;
     this.imagename = imagename;
+  }
+
+  navigateToWorkflowEditMode() {
+    this._router.navigate(['/work-flow']);
   }
 
   protected readonly parent = parent;
