@@ -8,11 +8,11 @@
             </div>
             <div class="mt-2">
                 @if (PageURL == "#"){
-                    <img src="assets/images/workflow/{{ imagename }}" alt="workflow" class="img-fluid">
+                <img src="assets/images/workflow/{{ imagename }}" alt="workflow" class="img-fluid">
                 } @else {
-                    <a routerLink="{{ PageURL }}" (click)="modal.dismiss('Cross click')">
-                         <img src="assets/images/workflow/{{ imagename }}" alt="workflow" class="img-fluid">
-                    </a>
+                <a routerLink="{{ PageURL }}" (click)="modal.dismiss('Cross click')">
+                    <img src="assets/images/workflow/{{ imagename }}" alt="workflow" class="img-fluid">
+                </a>
                 }
             </div>
         </div>
@@ -27,7 +27,8 @@
                         <h5 class="mb-4 fs-2 pt-4">Add APIs Workflow</h5>
                         <div>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#success-Payment" (click)="successModal(successDataModal,'#', 'Workflow1.png')">Show Workflow</button>
+                                data-bs-target="#success-Payment"
+                                (click)="successModal(successDataModal,'#', 'Workflow1.png')">Show Workflow</button>
                         </div>
                         <div class="row justify-content-center mt-2">
                             <div class="col-lg-10">
@@ -46,7 +47,12 @@
                         <h5 class="mb-4 fs-2 pt-4">Add Dashboards Workflow</h5>
                         <div>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#success-Payment" (click)="successModal(successDataModal,'dashboards-statistics', 'Workflow2.png')">Show Workflow</button>
+                                data-bs-target="#success-Payment"
+                                (click)="successModal(successDataModal,'dashboards-statistics', 'Workflow2.png')">Show
+                                Workflow</button>
+                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode()">
+                                Edit Workflow
+                            </button>
                         </div>
                         <div class="row justify-content-center mt-2">
                             <div class="col-lg-10">
@@ -65,7 +71,8 @@
                         <h5 class="mb-4 fs-2 pt-4">Add Tables Workflow</h5>
                         <div>
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#success-Payment" (click)="successModal(successDataModal,'#', 'Workflow3.png')">Show Workflow</button>
+                                data-bs-target="#success-Payment"
+                                (click)="successModal(successDataModal,'#', 'Workflow3.png')">Show Workflow</button>
                         </div>
                         <div class="row justify-content-center mt-2">
                             <div class="col-lg-10">
@@ -81,4 +88,3 @@
         </div>
     </div>
 </div>
-
