@@ -31,7 +31,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/mxgraph/javascript/src",
+                "output": "/assets/mxgraph"
+              }
             ],
             "styles": [
               "node_modules/prismjs/themes/prism.css",
@@ -152,7 +157,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "node_modules/mxgraph/javascript/src",
+                "output": "/assets/mxgraph"
+              }
             ],
             "styles": [
               "src/styles.scss"

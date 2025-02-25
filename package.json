@@ -50,6 +50,7 @@
     "angular-ng-stepper": "^2.0.0",
     "angular-shepherd": "^17.0.0",
     "angularx-flatpickr": "^7.3.0",
+    "jointjs-plus": "file:rappid.tgz",
     "apexcharts": "^3.49.1",
     "axios": "^1.7.2",
     "bootstrap": "5.3.3",
