@@ -145,7 +145,11 @@ export const MENU: MenuItem[] = [
     label: 'MENUITEMS.WORKFLOW_MANAGEMENT.TEXT',
     icon: 'ri-admin-fill',
     link: '/work-flow'
-  }
-
-
+  },
+  {
+    id: 400,
+    label: 'MENUITEMS.WORKFLOW_EDIT.TEXT',
+    icon: 'ri-admin-fill',
+    link: '/work-flow-edit'
+  },
 ];
