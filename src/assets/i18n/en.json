@@ -48,6 +48,9 @@
     "WORKFLOW_MANAGEMENT":{
       "TEXT": "Workflow Management (I-Plan)"
     },
+    "WORKFLOW_EDIT":{
+      "TEXT": "Workflow Edit (I-Plan)"
+    },
     "MENU": {
       "TEXT": "MENU"
     },

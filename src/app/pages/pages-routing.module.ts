@@ -28,6 +28,7 @@ import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 
 import { AdministrationComponent  } from "./administration/administration.component";
 import { WorkFlowComponent } from './work-flow/work-flow.component';
+import { WorkFlowEditComponent } from './work-flow-edit/work-flow-edit.component';
 
 const routes: Routes = [
     {
@@ -35,6 +36,9 @@ const routes: Routes = [
     },
     {
       path: 'work-flow', component: WorkFlowComponent 
+    },
+    {
+      path: 'work-flow-edit', component: WorkFlowEditComponent 
     },
     {
       path: 'indicator360/gross-domestic-product', component: GrossDomesticProductComponent
