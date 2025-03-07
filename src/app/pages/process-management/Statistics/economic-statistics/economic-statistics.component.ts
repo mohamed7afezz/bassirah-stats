@@ -31,8 +31,8 @@ export class EconomicStatisticsComponent implements OnInit {
     this.imagename = imagename;
   }
 
-  navigateToWorkflowEditMode() {
-    this._router.navigate(['/work-flow']);
+  navigateToWorkflowEditMode(id: number) {
+    this._router.navigate(['/work-flow-edit', id]);
   }
 
   protected readonly parent = parent;
