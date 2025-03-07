@@ -41,6 +41,9 @@ const routes: Routes = [
       path: 'work-flow-edit', component: WorkFlowEditComponent 
     },
     {
+      path: 'work-flow-edit/:id', component: WorkFlowEditComponent 
+    },
+    {
       path: 'indicator360/gross-domestic-product', component: GrossDomesticProductComponent
     },
     {
