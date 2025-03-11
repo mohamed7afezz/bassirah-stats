@@ -29,7 +29,7 @@
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#success-Payment"
                                 (click)="successModal(successDataModal,'#', 'Workflow1.png')">Show Workflow</button>
-                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode(1)">
+                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode('1')">
                                 Edit Workflow
                             </button>
                         </div>
@@ -53,7 +53,7 @@
                                 data-bs-target="#success-Payment"
                                 (click)="successModal(successDataModal,'dashboards-statistics', 'Workflow2.png')">Show
                                 Workflow</button>
-                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode(2)">
+                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode('2')">
                                 Edit Workflow
                             </button>
                         </div>
@@ -76,7 +76,7 @@
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                 data-bs-target="#success-Payment"
                                 (click)="successModal(successDataModal,'#', 'Workflow3.png')">Show Workflow</button>
-                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode(3)">
+                            <button type="button" class="btn btn-secondary ms-2" (click)="navigateToWorkflowEditMode('3')">
                                 Edit Workflow
                             </button>
                         </div>
@@ -91,6 +91,15 @@
                 </div><!-- end card -->
             </div><!-- end col -->
 
+        </div>
+    </div>
+</div>
+<div class="row mt-2" [ngClass]="{'d-none': showEditWorkflow !== 'true'}">
+    <div class="col-12 m-auto">
+        <div class="card">
+            <div class="card-body p-5 text-center">
+                <iframe [src]="safeUrl" width="100%" frameborder="0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </div>

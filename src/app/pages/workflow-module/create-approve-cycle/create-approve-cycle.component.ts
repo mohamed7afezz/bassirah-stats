@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {FormsModule} from "@angular/forms";
+import { FormsModule } from "@angular/forms";
 import { NgClass } from "@angular/common";
 import { CommonModule } from '@angular/common'; // ✅ Import CommonModule
 import { NgForm , ReactiveFormsModule } from '@angular/forms';
-import {UiSwitchModule} from "ngx-ui-switch";
+import { UiSwitchModule } from "ngx-ui-switch";
 
 @Component({
   selector: 'app-create-approve-cycle',

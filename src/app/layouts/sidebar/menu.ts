@@ -140,10 +140,4 @@ export const MENU: MenuItem[] = [
     icon: 'ri-admin-fill',
     link: '/administration'
   },
-  {
-    id: 400,
-    label: 'MENUITEMS.WORKFLOW_EDIT.TEXT',
-    icon: 'ri-admin-fill',
-    link: '/work-flow-edit'
-  },
 ];
