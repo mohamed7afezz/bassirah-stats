@@ -40,3 +40,7 @@ background-color: lightgray;
 color: black;
 text-align: end;
 }
+
+::ng-deep .diagram-container .bjs-container a {
+  display: none !important;
+}
