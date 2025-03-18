@@ -26,6 +26,8 @@ import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 import { AdministrationComponent  } from "./administration/administration.component";
 import { WorkFlowComponent } from './work-flow/work-flow.component';
 import { WorkFlowEditComponent } from './work-flow-edit/work-flow-edit.component';
+import { SpatialResourcesStatisticsItemsComponent } from './statistical-data-mart/spatial-resources-statistics-items/spatial-resources-statistics-items.component';
+import { SocialStatisticsItemsComponent } from './statistical-data-mart/social-statistics-items/social-statistics-items.component';
 
 const routes: Routes = [
   {
@@ -48,6 +50,12 @@ const routes: Routes = [
   },
   {
     path: 'economic-statistics', component: EconomicStatisticsComponent
+  },
+  {
+    path: 'spatial-resources-statistics', component: SpatialResourcesStatisticsItemsComponent
+  },
+  {
+    path: 'social-statistics', component: SocialStatisticsItemsComponent
   },
   {
     path: 'economic-statistics/dashboards-statistics', component: DashboardsStatisticsComponent
