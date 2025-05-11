@@ -5,13 +5,15 @@ export const MENU: MenuItem[] = [
     id: 200,
     label: 'MENUITEMS.INDICATOR360.TEXT',
     icon: 'ri-search-eye-line',
-    link: '/indicator360'
+    link: '/indicator360',
+    permission: 'INDICATOR360.VIEW',
   },
   {
     id: 201,
     label: 'MENUITEMS.PROCESS_MANAGEMENT.TEXT',
     icon: 'ri-booklet-line',
     isCollapsed: true,
+    permission: 'PROCESS_MANAGEMENT.VIEW',
     subItems: [
       {
         id: 210,
@@ -37,31 +39,36 @@ export const MENU: MenuItem[] = [
     id: 202,
     label: 'MENUITEMS.DATA_VISUALIZATION.TEXT',
     icon: 'ri-table-fill',//ri-line-chart-fill',
-    link: '/data_visualization'
+    link: '/data_visualization',
+    permission: 'DATA_VISUALIZATION.VIEW',
   },
   {
     id: 203,
     label: 'MENUITEMS.STATISTICAL_DATA_MART.TEXT',
     icon: 'ri-shopping-cart-line',
-    link: '/statistical_data_mart'
+    link: '/statistical_data_mart',
+    permission: 'STATISTICAL_DATA_MART.VIEW'
   },
   {
     id: 204,
     label: 'MENUITEMS.DATA_WRANGLING.TEXT',
     icon: 'ri-tools-fill',
-    link: '/data_wrangling'
+    link: '/data_wrangling',
+    permission: 'DATA_WRANGLING.VIEW'
   },
   {
     id: 205,
     label: 'MENUITEMS.DATA_ANALYTICS.TEXT',
     icon: 'ri-speak-fill',
-    link: '/data_analytics'
+    link: '/data_analytics',
+    permission: 'DATA_ANALYTICS.VIEW'
   },
   {
     id: 300,
     label: 'MENUITEMS.WORKFLOW.TEXT',
     icon: 'ri-flow-chart',
     link: '/workflow',
+    permission: 'WORKFLOW.VIEW',
     subItems: [
       {
         id: 301,
@@ -82,6 +89,7 @@ export const MENU: MenuItem[] = [
     label: 'MENUITEMS.COLLABORATION.TEXT',
     icon: 'ri-message-2-fill',
     isCollapsed: true,
+    permission: 'COLLABORATION.VIEW',
     subItems: [
       {
         id: 208,
@@ -138,6 +146,7 @@ export const MENU: MenuItem[] = [
     id: 400,
     label: 'MENUITEMS.ADMINISTRATION.TEXT',
     icon: 'ri-admin-fill',
-    link: '/administration'
+    link: '/administration',
+    permission: 'ADMINISTRATION.VIEW'
   },
 ];

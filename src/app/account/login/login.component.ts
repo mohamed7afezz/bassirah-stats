@@ -51,8 +51,8 @@ export class LoginComponent implements OnInit {
      * Form Validatyion
      */
      this.loginForm = this.formBuilder.group({
-      email: ['admin@themesbrand.com', [Validators.required, Validators.email]],
-      password: ['123456', [Validators.required]],
+      email: ['', [Validators.required]],
+      password: ['', [Validators.required]],
     });
     // get return url from route parameters or default to '/'
     // this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
@@ -69,16 +69,18 @@ export class LoginComponent implements OnInit {
 
      // Login Api
      this.store.dispatch(login({ email: this.f['email'].value, password: this.f['password'].value }));
-    // this.authenticationService.login(this.f['email'].value, this.f['password'].value).subscribe((data:any) => { 
-    //   if(data.status == 'success'){
-    //     sessionStorage.setItem('toast', 'true');
-    //     sessionStorage.setItem('currentUser', JSON.stringify(data.data));
-    //     sessionStorage.setItem('token', data.token);
-    //     this.router.navigate(['/']);
-    //   } else {
-    //     this.toastService.show(data.data, { classname: 'bg-danger text-white', delay: 15000 });
-    //   }
-    // });
+    this.authenticationService.login(this.f['email'].value, this.f['password'].value).subscribe((data:any) => {
+
+      if(data && data.access_token) {
+        sessionStorage.setItem('refreshToken', data.refresh_token);
+        sessionStorage.setItem('toast', 'true');
+        sessionStorage.setItem('currentUser', JSON.stringify({"_id":"629f15c770a470a230cc5d5a","first_name":"adminkjh","email":"admin@themesbrand.com","password":"$2a$12$tOmV5oSs.Itd7KZ6IEV3L.kDnDZz9N2TadTrrnu0M/9ktxplL/lzC","confirm_password":"123456","changePasswordAt":"2022-06-07T09:06:27.077Z","skills":[],"__v":1,"passwordtoken":"2ee488e19e985d36665042e45cd211facac9bc0fc06e8f15bc89805bb34c6f19","passwordtokenexp":"2025-04-22T09:08:37.387Z","exp_year":[],"portfolio":[]}));
+        sessionStorage.setItem('token', data.access_token);
+        this.router.navigate(['/']);
+      } else {
+        this.toastService.show(data.data, { classname: 'bg-danger text-white', delay: 15000 });
+      }
+    });
 
     // stop here if form is invalid
     // if (this.loginForm.invalid) {

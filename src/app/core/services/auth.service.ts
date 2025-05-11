@@ -13,7 +13,7 @@ const AUTH_API = GlobalComponent.AUTH_API;
 const httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  
+
 
 @Injectable({ providedIn: 'root' })
 
@@ -38,7 +38,7 @@ export class AuthenticationService {
      * @param email email
      * @param password password
      */
-    register(email: string, first_name: string, password: string) {        
+    register(email: string, first_name: string, password: string) {
         // return getFirebaseBackend()!.registerUser(email, password).then((response: any) => {
         //     const user = response;
         //     return user;
@@ -73,17 +73,24 @@ export class AuthenticationService {
         //     return user;
         // });
 
-        return this.http.post(AUTH_API + 'signin', {
-            email,
-            password
-          }, httpOptions).pipe(
+         let body = new URLSearchParams();
+        body.set('client_id', 'web-app');
+        body.set('grant_type', 'password');
+        body.set('username', email);
+        body.set('password', password);
+        let options = {
+        headers: new HttpHeaders().set(
+            'Content-Type',
+            'application/x-www-form-urlencoded'
+        ),
+        };
+        return this.http.post('https://cib-dev.mappshub.com:8040/auth/realms/bassirah-stats/protocol/openid-connect/token', body, options).pipe(
               map((response: any) => {
                 const user = response;
                 return user;
             }),
             catchError((error: any) => {
-                const errorMessage = 'Login failed'; // Customize the error message as needed
-                return throwError(errorMessage);
+                return error;
             })
         );
     }
@@ -107,7 +114,7 @@ export class AuthenticationService {
         this.currentUserSubject.next(null!);
 
         return of(undefined).pipe(
-        
+
         );
 
     }
@@ -122,6 +129,21 @@ export class AuthenticationService {
             return message;
         });
     }
+
+  getRoles() {
+    let authToken = sessionStorage.getItem("token");
+    if (!authToken) return [];
+    let jwtData = authToken?.split(".")[1];
+    let decodedJwtJsonData = window.atob(jwtData);
+    let decodedJwtData = JSON.parse(decodedJwtJsonData);
+    return decodedJwtData["realm_access"]["roles"];
+  }
+
+  haveRole(role: string): boolean {
+    const roles = this.getRoles(); // Get the current user's role from your AuthService
+
+    return roles.includes(role);
+  }
 
 }
 
