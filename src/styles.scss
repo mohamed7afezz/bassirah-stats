@@ -259,3 +259,11 @@
     font-size: 1.5rem;
     color: #1b8354;
 }
+
+a {
+	text-decoration: none !important;
+}
+.table-responsive.table-card tr td a,
+.ps-3.text-muted li a {
+	text-decoration: underline !important;
+}

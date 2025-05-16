@@ -8,7 +8,7 @@
   "files": [
     "./src/main.ts",
     "./src/polyfills.ts",
-    "node_modules/jointjs-plus/index.ts"
+    "node_modules/Zx js-plus/index.ts"
   ],
   "include": [
     "src/**/*.d.ts"
