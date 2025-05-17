@@ -50,8 +50,7 @@
               "src/assets/scss/icons.scss",
               "src/assets/scss/app.scss",
               "node_modules/bpmn-js/dist/assets/diagram-js.css",
-              "node_modules/bpmn-js/dist/assets/bpmn-font/css/bpmn.css",
-              "node_modules/bootstrap/dist/css/bootstrap.css"
+              "node_modules/bpmn-js/dist/assets/bpmn-font/css/bpmn.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.js",
